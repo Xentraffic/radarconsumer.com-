@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización de Beneficencia</title>
+    <link rel="shortcut icon" href="./images/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src='https://b-js.ringba.com/CA59753f37379847698236cf6ac2539021' async></script>
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2255484874853072');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="" /></noscript>
+
+    <script>
+        function getSpanishDate() {
+            const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            
+            const today = new Date();
+            const day = days[today.getDay()];
+            const date = today.getDate();
+            const month = months[today.getMonth()];
+            const year = today.getFullYear();
+            
+            return `${day} ${date} de ${month} ${year}`;
+        }
+
+        // Set the date when the page loads
+        window.addEventListener('load', function() {
+            document.getElementById('currentDate').textContent = getSpanishDate();
+        });
+    </script>
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <main class="min-h-screen">
+        <div style="background-color: #1977f2;">
+            <div class="max-w-4xl mx-auto bg-white text-center text-gray-600">
+                <div class="p-4">
+                    <p class="font-sans-serif text-md sm:text-lg font-bold mt-2">
+                        <span class="text-red-600"
+                            style="background-color: #fff; padding: 5px; border-radius: 3px;">Advertencia:</span>
+                        Se cierra la inscripción
+                        <span id="currentDate"></span> a la medianoche.
+                    </p>
+                    <h2 class="font-bold text-xl sm:text-3xl mt-1">Elimina $15,000 o más en deuda de tarjetas de crédito. Borra miles en deudas y intereses.</h2>
+                </div>
+                <div class="w-full md:col-span-1 text-center block">
+                    <div class=" text-sm flex items-center justify-center">
+                        <span class="relative flex h-4 w-4 inline-flex mr-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-green-500"></span>
+                            <span class="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
+                        </span> Sofía está en línea.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md mx-auto bg-white">
+            <div class="p-4">
+                <div class="space-y-4">
+                    <div class="chat-container pb-2">
+                        <!-- Agent message -->
+                        <div id="agentBlock1" class="flex items-end w-5/6">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/agent.webp" alt="Sender Avatar">
+                            </div>
+                            <div class="ml-3 agent-chat">
+                                <div id="initTyping" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 inline-block">
+                                    <div class="typing-animation">
+                                        <div class="typing-dot"></div>
+                                        <div class="typing-dot"></div>
+                                        <div class="typing-dot"></div>
+                                    </div>
+                                </div>
+                                <div id="msg1" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">Hola 👋</p>
+                                </div>
+                                <div id="msg2" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">Soy Sofía del Equipo de Alivio de la Deuda.</p>
+                                </div>
+                                <div id="msg3" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">¿Te gustaría saber si calificas para el alivio de tus deudas? Toca ¡Sí! 😃</p>
+                                </div>
+                                <div id="msg4" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <div>
+                                        <script>
+                                            //
+                                        </script>
+                                        <button
+                                            class="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-12"
+                                            type="button" data-form-step="1" data-form-value="Yes">Sí</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User message -->
+                        <div id="userBlock1" class="flex items-start justify-end pt-4 hidden">
+                            <div class="mr-3 receiver-chat">
+                                <div id="msg5"
+                                    class="bg-blue-500 text-white p-3 rounded-lg shadow-xs mt-2 inline-block">
+                                    <p class="text-md">Sí</p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/profile.png" alt="Receiver Avatar">
+                            </div>
+                        </div>
+                        <!-- Agent message -->
+                        <div id="agentBlock2" class="flex items-end w-5/6 hidden pt-4">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/agent.webp" alt="Sender Avatar">
+                            </div>
+                            <div class="ml-3 agent-chat">
+                                <div id="msg6" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">Perfecto, déjame hacerte dos preguntas rápidas...</p>
+                                </div>
+                                <div id="msg7" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">¿Tiene más de $15,000 en deuda? Toca Sí o No.
+                                    </p>
+                                </div>
+                                <div id="msg8" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <div class="grid grid-rows-1 grid-cols-2 gap-x-3">
+                                        <script>
+                                            //
+                                        </script>
+                                        <button
+                                            class="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8"
+                                            style="background-color: green;" type="button" data-form-step="2"
+                                            data-form-value="Yes">Sí</button>
+                                        <button
+                                            class="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8"
+                                            style="background-color: crimson;" 
+                                            type="button" 
+                                            data-form-step="2"
+                                            data-form-value="No" 
+                                            onclick="
+                                                document.getElementById('msg13').classList.add('hidden');
+                                                document.getElementById('msg14').classList.add('hidden');
+                                                document.getElementById('msg17').classList.add('hidden');
+                                                document.getElementById('msg18').classList.remove('hidden');
+                                                document.getElementById('msg19').classList.remove('hidden')
+                                            ">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User message -->
+                        <div id="userBlock2" class="flex items-start justify-end hidden">
+                            <div class="mr-3 receiver-chat">
+                                <div class="bg-blue-500 text-white p-3 rounded-lg shadow-xs mt-2 inline-block">
+                                    <p id="msg9yes" class="text-md hidden">Sí</p>
+                                    <p id="msg9no" class="text-md hidden">No</p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/profile.png" alt="Receiver Avatar">
+                            </div>
+                        </div>
+                        <!-- Agent message -->
+                        <div id="agentBlock3" class="flex items-end w-5/6 hidden pt-4">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/agent.webp" alt="Sender Avatar">
+                            </div>
+                            <div class="ml-3 agent-chat">
+                                <div id="msg10" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">¿Te gustaría liberarte de las deudas?</p>
+                                </div>
+                                <div id="msg11" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <div class="grid grid-rows-1 grid-cols-2 gap-x-3">
+                                        <script>
+                                            //
+                                        </script>
+                                         <button
+                                            class="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8"
+                                            style="background-color: green;" type="button" data-form-step="3"
+                                            data-form-value="Yes">Sí</button>
+                                        <button
+                                            class="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8"
+                                            style="background-color: crimson;" 
+                                            type="button" 
+                                            data-form-step="3"
+                                            data-form-value="No" 
+                                            onclick="
+                                                document.getElementById('agentBlock4').classList.add('hidden');
+                                                document.getElementById('msg13').classList.add('hidden');
+                                                document.getElementById('msg14').classList.add('hidden');
+                                                document.getElementById('msg17').classList.add('hidden');
+                                                document.getElementById('msg18').classList.remove('hidden');
+                                                document.getElementById('msg19').classList.remove('hidden')
+                                            ">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User message -->
+                        <div id="userBlock3" class="flex items-start justify-end hidden">
+                            <div class="mr-3 receiver-chat">
+                                <div class="bg-blue-500 text-white p-3 rounded-lg shadow-xs mt-2 inline-block">
+                                    <p id="msg12yes" class="text-md">Sí</p>
+                                    <p id="msg12no" class="text-md hidden">No</p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/profile.png" alt="Receiver Avatar">
+                            </div>
+                        </div>
+                        <!-- Agent message -->
+                        <div id="agentBlock4" class="flex items-end w-5/6 hidden pt-4">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="images/agent.webp" alt="Sender Avatar">
+                            </div>
+                            <div class="ml-3 agent-chat">
+                                <div id="msg13" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">🎉 ¡Felicidades! 🎁</p>
+                                </div>
+                                <div id="msg14" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p id="msg14approved" class="text-md text-gray-800 hidden">Tu lugar está reservado. Para comenzar, haga clic en el botón de abajo para hablar con un experto.</p>
+                                </div>
+                                <div id="msg17" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <button id="PrimaryNumber" 
+                                            class="chat-button text-white font-bold bg-green-500 rounded-full py-3 px-8"
+                                            style="background-color: #4CAF50;">
+                                        📞 (833) 236-1046
+                                    </button>
+                                </div>
+                                <div id="msg18" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">Lo siento, pero las preguntas que respondiste nos han ayudado a determinar que no podemos ayudarte en este momento.</p>
+                                </div>
+                                <div id="msg19" class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+                                    <p class="text-md text-gray-800">¡Que tengas un buen día! 😃</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Disconnect message -->
+                        <div id="disconnected" class="pt-2 hidden">
+                            <div class="relative flex py-5 items-center">
+                                <div class="flex-grow border-t border-gray-200"></div>
+                                <span class="flex-shrink mx-4 text-gray-300 text-xs">Chat cerrado</span>
+                                <div class="flex-grow border-t border-gray-200"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="tcpa" class="pt-2 hidden">
+        <div
+            class="mx-auto max-w-7xl overflow-hidden px-6 lg:px-8 text-sm sm:text-md leading-5 sm:leading-6 text-gray-500">
+            <div class="tcpa-container text-xs text-center leading-5 text-gray-500"></div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 border-t border-t-1 border-t-gray-200 mt-8">
+        <div
+            class="mx-auto max-w-7xl overflow-hidden px-6 py-8 lg:px-8 text-sm sm:text-md leading-5 sm:leading-6 text-gray-500">
+            <p class="text-center pb-8">La información proporcionada en este sitio web es solo para fines informativos. No tiene la intención de ser, ni constituye ningún tipo de asesoramiento financiero. Se recomienda buscar el consejo de un profesional calificado antes de tomar cualquier decisión financiera basada en la información proporcionada. Este sitio web actúa como un editor independiente de medios digitales y publicidad. Esta página web está formateada como un *advertorial*. Un *advertorial* es un anuncio escrito en formato editorial de noticias. TENGA EN CUENTA QUE ESTO ES UN ANUNCIO Y NO UN ARTÍCULO DE NOTICIAS REAL, UN BLOG O UNA ACTUALIZACIÓN DE PROTECCIÓN AL CONSUMIDOR. Este sitio web PUEDE RECIBIR COMPENSACIÓN POR CLICS O VENTAS GENERADAS A PARTIR DEL CONTENIDO EN ESTA PÁGINA. Esta compensación puede afectar qué empresas se muestran, la colocación de los anuncios y su orden de aparición. Cualquier información, descuento o cotización de precio listada puede no ser aplicable en su ubicación o si no se cumplen ciertos requisitos. Además, nuestros anunciantes pueden tener requisitos adicionales de calificación.  
+                Nuestro objetivo es brindar un servicio excepcional. Uno de nuestros agentes podría comunicarse con usted para discutir su pedido, solicitar comentarios y/o ver si necesita asistencia con sus productos, servicios o planes, al número de teléfono que proporcionó, sin importar su estatus en la lista de no llamar. Puede optar por no recibir más contactos en cualquier momento simplemente diciéndole a nuestro equipo de servicio al cliente que no desea ser contactado. En caso de que nuestro equipo no pueda comunicarse con usted por teléfono, puede enviarle un mensaje de texto informándole que intentaron llamarlo. Tanto nuestros mensajes de texto como las llamadas telefónicas pueden ser enviados o conectados utilizando software automatizado. Pueden aplicarse cargos del operador. Puede optar por no recibir futuros contactos por mensaje de texto respondiendo en cualquier momento con "STOP"..</p>
+
+            <p class="text-center pb-4 text-blue-400">
+                <span>
+                    <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                        href="https://www.google.com/">Contact Us</a> |
+                    <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                        href="https://www.google.com/">Privacy Policy</a> |
+                    <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                        href="https://www.google.com/">Terms Of Service</a>
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        // document.getElementById("msg17").onclick = function () {
+        //     fbq("track", "Purchase");
+        // };
+    </script>
+
+    <!-- Custom JS Script -->
+    <script src="./js/main_script.js"></script>
+
+    <script>
+        // Keep startChat exactly the same
+        function startChat() {
+            setTimeout(() => {
+                document.getElementById('initTyping').classList.add('hidden');
+                document.getElementById('msg1').classList.remove('hidden');
+                
+                setTimeout(() => {
+                    document.getElementById('msg2').classList.remove('hidden');
+                    setTimeout(() => {
+                        document.getElementById('msg3').classList.remove('hidden');
+                        setTimeout(() => {
+                            document.getElementById('msg4').classList.remove('hidden');
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            }, 2000);
+        }
+
+        function showTyping(blockId) {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'ml-3 agent-chat';
+            typingDiv.innerHTML = `
+                <div class="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 inline-block">
+                    <div class="typing-animation">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+            `;
+            document.getElementById(blockId).appendChild(typingDiv);
+            return typingDiv;
+        }
+
+        function showMessagesSequentially(messages, blockId) {
+            const typing = showTyping(blockId);
+            setTimeout(() => {
+                if (typing && typing.parentNode) {
+                    typing.parentNode.removeChild(typing);
+                }
+                let delay = 0;
+                messages.forEach((msgId) => {
+                    setTimeout(() => {
+                        if (msgId === 'msg14') {
+                            document.getElementById('msg14').classList.remove('hidden');
+                            document.getElementById('msg14approved').classList.remove('hidden');
+                        } else {
+                            document.getElementById(msgId).classList.remove('hidden');
+                        }
+                    }, delay);
+                    delay += 1000;
+                });
+            }, 4000);
+        }
+
+        function handleChatButton(step, value) {
+            // Disable all buttons in the current step
+            const currentButtons = document.querySelectorAll(`[data-form-step="${step}"]`);
+            currentButtons.forEach(button => {
+                button.style.pointerEvents = 'none';
+                button.style.opacity = '0.5';
+            });
+
+            if (value.toLowerCase() === 'no') {
+                switch(step) {
+                    case 1:
+                        document.getElementById('userBlock1').classList.remove('hidden');
+                        break;
+                    case 2:
+                        document.getElementById('userBlock2').classList.remove('hidden');
+                        document.getElementById('msg9yes').classList.add('hidden');
+                        document.getElementById('msg9no').classList.remove('hidden');
+                        break;
+                    case 3:
+                        document.getElementById('userBlock3').classList.remove('hidden');
+                        document.getElementById('msg12yes').classList.add('hidden');
+                        document.getElementById('msg12no').classList.remove('hidden');
+                        break;
+                }
+                document.getElementById('agentBlock4').classList.remove('hidden');
+                showMessagesSequentially(['msg18', 'msg19'], 'agentBlock4');
+                return;
+            }
+
+            switch(step) {
+                case 1:
+                    document.getElementById('userBlock1').classList.remove('hidden');
+                    document.getElementById('agentBlock2').classList.remove('hidden');
+                    showMessagesSequentially(['msg6', 'msg7', 'msg8'], 'agentBlock2');
+                    break;
+
+                case 2:
+                    document.getElementById('userBlock2').classList.remove('hidden');
+                    document.getElementById('msg9yes').classList.remove('hidden');
+                    document.getElementById('agentBlock3').classList.remove('hidden');
+                    showMessagesSequentially(['msg10', 'msg11'], 'agentBlock3');
+                    break;
+
+                case 3:
+                    document.getElementById('userBlock3').classList.remove('hidden');
+                    document.getElementById('msg12yes').classList.remove('hidden');
+                    document.getElementById('agentBlock4').classList.remove('hidden');
+                    showMessagesSequentially(['msg13', 'msg14', 'msg14approved', 'msg17'], 'agentBlock4');
+                    const callButton = document.getElementById('PrimaryNumber');
+                    callButton.onclick = function() {
+                        window.location.href = 'tel:8332361046';
+                    };
+                    break;
+            }
+        }
+
+        // Keep these exactly the same
+        document.querySelectorAll('.chat-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const step = parseInt(this.getAttribute('data-form-step'));
+                const value = this.getAttribute('data-form-value');
+                handleChatButton(step, value);
+            });
+        });
+
+        window.addEventListener('load', startChat);
+    </script>
+
+    <section id="custom-social-proof" class="custom-social-proof" style="display: none;">
+        <div class="custom-notification">
+            <div class="custom-notification-container">
+                <div class="custom-notification-image-wrapper">
+                    <img id="social-proof-avatar" class="avatar" src="./images/ana.jpg">
+                </div>
+                <div class="custom-notification-content-wrapper">
+                    <p class="custom-notification-content">
+                        <span id="social-proof-customer">Ana Diaz</span>
+                        <span id="social-proof-customer-info">Acabo de eliminar $40,875 en deudas</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    (function () {
+        let customers = [
+            'Mateo Garcia', 
+            'Santiago Rodriguez', 
+            'Elena Ramirez', 
+            'Alejandro Sanchez', 
+            'Daniel Ramirez', 
+            'Isabella Rivera', 
+            'Valeria Gonzalez', 
+            'Gabriela Hernandez', 
+            'Carlos Ortiz', 
+            'Mariana Alvarez',
+            'Ana Diaz'
+        ];
+        let approvedAmounts = [];
+        let oAvatar = $("#social-proof-avatar");
+        let oCustomer = $("#social-proof-customer");
+        let oInformation = $("#social-proof-customer-info");
+        let oContainer = $("#custom-social-proof");
+        let lastIndex = -1; // Keep track of last shown customer
+
+        // Generate random approval amounts
+        for (let customer of customers) {
+            approvedAmounts.push(Math.floor(Math.random() * (46400 - 15000 + 1)) + 15000);
+        }
+
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function getRandomIndex(max, lastUsed) {
+            let newIndex;
+            do {
+                newIndex = Math.floor(Math.random() * max);
+            } while (newIndex === lastUsed);
+            return newIndex;
+        }
+
+        function updateSocial() {
+            let index = getRandomIndex(customers.length, lastIndex);
+            lastIndex = index; // Save this index for next time
+            
+            let customer = customers[index];
+            let approved = Math.floor(Math.random() * (46400 - 15000 + 1)) + 15000; // Generate new random amount each time
+            let avatar = customer.split(" ")[0];
+
+            oAvatar.attr("src", "images/" + avatar.toLowerCase() + ".jpg");
+            oCustomer.html(customer);
+            oInformation.html("Acabo de eliminar $" + formatNumber(approved) + " en deudas");
+        }
+
+        setInterval(function () {
+            if (oContainer.is(':hidden')) {
+                oContainer.stop().slideToggle('slow');
+                updateSocial();
+            } else {
+                oContainer.stop().slideToggle('slow');
+            }
+        }, 6500);
+    })();
+    </script>
+
+</body>
+
+</html>

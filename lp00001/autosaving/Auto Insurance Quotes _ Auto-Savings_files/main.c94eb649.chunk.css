@@ -1,0 +1,728 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.otto2-background {
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #fff;
+  background-size: contain;
+  background-position-x: 145%;
+  background-position-y: 3.5rem;
+  background-repeat: no-repeat;
+}
+.otto2-logo-container {
+  margin-top: 15px;
+  -webkit-flex: 3 1;
+  flex: 3 1;
+}
+.otto-paint {
+  content: url(/assets/LP/Otto/Otto.png);
+  height: 5rem;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+}
+.otto-paint,
+.otto-slash-paint {
+  display: -webkit-flex;
+  display: flex;
+}
+.otto-slash-paint {
+  content: url(/assets/LP/Otto/Slash.png);
+  height: 7px;
+  width: 155px;
+  margin-bottom: -48px;
+  z-index: 1000;
+}
+.otto2-main-title {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  color: #072344;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
+}
+.otto2-main-title-text {
+  color: #072344;
+  font-size: 70px;
+  margin: 0;
+}
+.otto2-logo {
+  max-width: 12rem;
+  margin-left: 2rem;
+}
+.otto2-footer {
+  font-weight: 300;
+  color: #535353;
+  padding: 1.5rem;
+  background-color: #ededed;
+}
+.otto-social-container {
+  text-align: right;
+}
+ul.otto-footer-social {
+  list-style: none;
+  padding: 0;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+ul.otto-footer-social li a {
+  color: #535353;
+}
+ul.otto-footer-social li a:hover {
+  opacity: 0.9;
+}
+.otto-footer-social-icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 1rem;
+}
+.otto2-inline-links {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.otto2-header-links {
+  text-align: right;
+}
+.otto2-header-link {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.otto2-header-link:hover {
+  text-decoration: underline;
+}
+.otto2-phone-link {
+  margin-right: 2rem;
+  color: #38445f;
+  text-decoration: none;
+}
+.otto2-phone-link:hover {
+  text-decoration: underline;
+}
+.otto2-phone-link-icon {
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+.otto2-insurance-icon-grid {
+  padding: 2rem;
+}
+.otto2-insurance-icon-container {
+  padding: 1rem 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #072344;
+  font-size: 25px;
+}
+.otto2-insurance-icon {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.otto2-insurance-icons {
+  text-align: center;
+}
+.otto2-mascot {
+  max-width: 40rem;
+}
+.webp .otto2-learn-more-container {
+  background-image: url(/assets/LP/Otto2/Otto_InsuranceBackground.webp);
+}
+.no-webp .otto2-learn-more-container {
+  background-image: url(/assets/LP/Otto2/Otto_InsuranceBackground.jpg);
+}
+.otto2-learn-more-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12px;
+  min-height: 40rem;
+  background-position: 50%;
+}
+.otto2-learn-more-heading {
+  color: #fff;
+  font-size: 55px;
+  margin-top: -3rem;
+  margin-bottom: 0;
+  max-width: 30rem;
+}
+.otto2-learn-more-content {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 25px;
+  max-width: 30rem;
+}
+.otto2-phone-form-container {
+  min-height: 35rem;
+  position: relative;
+}
+.otto2-form-image-1 {
+  z-index: 900;
+  top: 0;
+  left: 40px;
+}
+.otto2-form-image-1,
+.otto2-form-image-2 {
+  height: 30rem;
+  position: absolute;
+  box-shadow: 0 0 5px -3px;
+  border-radius: 25px;
+}
+.otto2-form-image-2 {
+  z-index: 800;
+  top: 20px;
+  left: 120px;
+}
+.otto2-form-image-3 {
+  height: 30rem;
+  position: absolute;
+  z-index: 700;
+  top: 40px;
+  left: 200px;
+  box-shadow: 0 0 5px -3px;
+  border-radius: 25px;
+}
+.otto2-compare-save-container {
+  margin: 0 auto;
+  max-width: 85rem;
+}
+.otto2-otto-money {
+  max-width: 35rem;
+  padding-left: 5rem;
+}
+.otto2-otto-phone-savings {
+  max-width: 25rem;
+}
+.otto2-compare-image-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.otto2-compare-save-heading {
+  color: #000;
+  font-size: 55px;
+  margin-top: -3rem;
+  margin-bottom: 0;
+  max-width: 30rem;
+}
+.otto2-compare-save-content {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 23px;
+  max-width: 35rem;
+}
+.otto2-why-choose-container {
+  background: #00478b;
+  color: #fff;
+  padding: 2rem 0;
+}
+.otto2-choose-main-title {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  border-bottom: solid #a09760;
+  margin: 0;
+}
+.otto2-choose-circle {
+  max-width: 3rem;
+}
+.choose-icon-circle {
+  text-align: center;
+  border: solid #a09760;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: -3rem;
+  background: #00478b;
+}
+.otto2-important-disclaimer {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+.why-choose-container {
+  color: #fff;
+  text-align: center;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.choose-content-container {
+  max-width: 12rem;
+  text-align: left;
+  margin-top: 15px;
+}
+.choose-content {
+  padding-left: 1rem;
+  line-height: 22px;
+}
+.choose-content > li {
+  margin-bottom: 1rem;
+}
+.choose-title {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.otto2-lets-see-container {
+  margin: 3rem 0;
+}
+.otto2-lets-see-title {
+  color: #072344;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 0 3rem;
+}
+.otto2-lets-see-link-container {
+  text-align: center;
+}
+.otto2-lets-see-button-link {
+  padding: 15px 50px;
+  background-color: #edd776;
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: solid #d2bc69;
+  width: 200px;
+  display: block;
+  position: relative;
+}
+.otto2-lets-see-button-link:after {
+  right: 1rem;
+  bottom: 14px;
+  content: "❯";
+  position: absolute;
+  text-align: center;
+  color: #000;
+}
+.otto2-email-link {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.otto2-footer-insurance-links {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  margin-left: 5rem;
+}
+.otto2-footer-insurance-links > a {
+  text-decoration: none;
+  margin-right: 3rem;
+  font-weight: 500;
+  font-size: 20px;
+}
+.otto2-step {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+.otto2-steps-container {
+  border-bottom: 4px dashed #072344;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+}
+.otto2-steps-number {
+  font-size: 110px;
+  color: #072344;
+  font-weight: 900;
+  margin-bottom: -3.5rem;
+}
+.bold-italic {
+  font-weight: 700;
+  font-style: italic;
+  display: contents;
+}
+.otto2-steps-text {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  font-size: 22px;
+  padding-left: 5px;
+  margin: 0;
+}
+.news-story-container {
+  margin-bottom: 3rem;
+}
+.news-story-container p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+a.news-link-headline {
+  margin: 0 0 10px;
+  font-size: 34px;
+  color: #072344;
+  text-transform: uppercase;
+}
+a.news-link-headline,
+a.news-read-more {
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.35s;
+}
+a.news-read-more {
+  color: #00478b;
+}
+a.news-link-headline:hover,
+a.news-read-more:hover {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .otto2-logo {
+    max-width: 9rem;
+    margin-left: 1rem;
+  }
+  .otto2-header-links {
+    padding-top: 1rem;
+  }
+  .otto2-phone-link {
+    margin-right: 1rem;
+  }
+  .otto2-main-title {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .otto2-main-title-text {
+    font-size: 45px;
+    margin: 0;
+  }
+  .otto2-insurance-icon-grid {
+    margin-top: 20px;
+    padding: 8px;
+  }
+  .otto2-insurance-icon-container {
+    font-size: 18px;
+  }
+  .otto2-insurance-icon {
+    width: 100%;
+  }
+  .otto2-mascot {
+    max-width: 100%;
+  }
+  .otto-paint {
+    height: 4rem;
+  }
+  .otto-slash-paint {
+    width: 98px;
+    margin-bottom: -35px;
+  }
+  .otto2-learn-more-heading {
+    font-size: 35px;
+    padding-left: 15px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .otto2-learn-more-content {
+    padding-left: 15px;
+    font-size: 22px;
+    text-align: center;
+  }
+  .otto2-form-image-1 {
+    height: 25rem;
+    top: 35px;
+  }
+  .otto2-form-image-2 {
+    height: 25rem;
+    top: 70px;
+    left: 100px;
+  }
+  .otto2-form-image-3 {
+    height: 25rem;
+    top: 105px;
+    left: 160px;
+  }
+  .otto2-compare-save-heading {
+    font-size: 35px;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .otto2-compare-save-content {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .otto2-compare-image-container {
+    margin-top: 3rem;
+  }
+  .otto2-otto-money {
+    max-width: 17rem;
+    margin-left: -6rem;
+  }
+  .otto2-otto-phone-savings {
+    max-width: 15rem;
+    right: 0;
+    top: 0;
+  }
+  .otto2-choose-main-title {
+    margin: 0;
+    font-size: 38px;
+  }
+  .choose-icon-circle-mobile-margin {
+    margin-top: 0;
+  }
+  .choose-content-container {
+    max-width: 90%;
+  }
+  .choose-content {
+    font-size: 18px;
+  }
+  .otto2-lets-see-title {
+    font-size: 38px;
+  }
+  .otto2-lets-see-link-container {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .otto2-lets-see-container {
+    margin-bottom: 0;
+  }
+  .otto2-steps-container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+    border-top: 4px dashed #072344;
+  }
+  .otto2-steps-text {
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 12px;
+  }
+  .otto2-steps-number {
+    margin-bottom: 0;
+  }
+  .otto2-inline-links {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .otto2-footer {
+    text-align: center;
+  }
+  .otto2-inline-links > p {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .otto2-inline-links-container {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .otto2-footer-insurance-links {
+    margin-left: 0;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .otto2-footer-insurance-links > a {
+    margin-right: 0;
+  }
+  .otto-social-container {
+    text-align: center;
+  }
+  .otto2-important-disclaimer {
+    margin: 1rem auto;
+    padding: 0 12px;
+    width: 90%;
+  }
+}
+.background {
+  background-image: url(/assets/LP/theGiraffe/Giraffe_Background.png);
+  height: 100vh;
+  width: 100vw;
+  background-color: #eaeceb;
+  background-size: contain;
+  background-position-x: 145%;
+  background-position-y: 3.5rem;
+  background-repeat: no-repeat;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  font-weight: 400;
+}
+.logo-container {
+  margin-top: 15px;
+  -webkit-flex: 1 1;
+  flex: 1 1;
+}
+.logo {
+  max-width: 25rem;
+}
+.page-title {
+  -webkit-flex: 2 1;
+  flex: 2 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  color: #564b48;
+  font-size: 2.25rem;
+  padding-bottom: 1rem;
+}
+.ty {
+  font-size: 1.5rem;
+}
+.cta-container {
+  -webkit-flex: 2 1;
+  flex: 2 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  padding-top: 1rem;
+  font-size: 1.15rem;
+}
+.cta-input {
+  width: 25rem;
+}
+.cta-button,
+.cta-input {
+  font-size: 1rem;
+  border: none;
+  height: 3rem;
+  padding-left: 14px;
+}
+.cta-button {
+  margin-left: 8px;
+  width: 12rem;
+  font-weight: 700;
+  background-color: #fbc77c;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+.cta-input:focus {
+  outline-color: #fbc77c;
+}
+.cta-button:focus {
+  outline: none;
+}
+.cta-button:hover {
+  background-color: #f4c18b;
+  width: 12.5rem;
+}
+.footer {
+  -webkit-flex: 6 1;
+  flex: 6 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  font-weight: 300;
+  color: #000;
+}
+.footer > p {
+  margin-top: 0;
+}
+.inline-links {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .background {
+    background-position: bottom;
+    background-position-x: center;
+    background-position-y: 90%;
+    text-align: center;
+  }
+  .container {
+    padding-left: 0;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .logo-container {
+    width: 90%;
+  }
+  .page-title {
+    width: 90%;
+    font-size: 2rem;
+  }
+  .cta-container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 90%;
+  }
+  .cta-input {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .cta-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  .footer {
+    width: 90%;
+    font-size: 0.75rem;
+    padding-bottom: 10px;
+  }
+  .footer > p {
+    margin: 0 5px;
+  }
+  .inline-links {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+/*# sourceMappingURL=main.c94eb649.chunk.css.map */

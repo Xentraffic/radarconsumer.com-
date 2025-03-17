@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADAR CONSUMER</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    (function (document, window) {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/6250827a5db82200137d5a8c";
+      script.onload = function () {
+        Pushnami
+          .update()
+          .prompt();
+      };
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })(document, window);
+  </script>
+
+  <script async src="https://aj2432.online/2f5f61d1.js"></script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '629248245015076');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=629248245015076&ev=PageView
+  &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+  <div class="hcontainer">
+    <div class="hinncontainer">
+      <ul>
+        <li> <a href="#">U.S </a></li>
+        <li><a href="#">World </a></li>
+        <li><a href="#">Health</a></li>
+      </ul>
+      <h1>RADAR CONSUMER</h1>
+    </div>
+  </div>
+  <div class="maincont">
+    <div class="nycontainer">
+      <div id="wrapper_for_teasers">
+        <div id="news_block_1">
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="bbfe6512f4150b1e8a27d303baeaeb6e"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="71ff09d9048345aa507cc6db61c04906"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="44d324faaeb8e6f706e17cc3c465a964"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="bdeb04ff4d1daf4ad63e3187ac04c7dc"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="73a8115fa425787a54438320cceac868"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="987e74bad38243d6dee09a16f396b3dd"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="e92d824285a77dbe6bfc805d16e80666"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="a2ed129f84e90b07ad06c661cd8a0ca2"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="76a7a5e0f6849bff6405e1be0dccbb2d"></ins>
+          </div>
+
+          <!-- from 11: -->
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="515904e74a04b2248d8c6a3a8d351f02"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="a249825f1c0ebb54d251c2d7b65a775b"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="5e023e0c84dbda2e83c18c4a93e984a0"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="09eac6b8a49bd058865ea8905d22920e"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="fbd553d93c425c1ffe11c5375ec3d44f"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="5b7600480438a8fe400e08ba3eb82a7f"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="f74057e12ce22839bc8cb1f756997cc8"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="782480a114d1b9d8bf0cd7eca19946ba"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="6a4234b66675bef4dc9f4003d3cbc912"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="24ae87bbbe93ea2b44a0f6f4fe3efa7f"></ins>
+          </div>
+
+          <!-- from 21:
+ -->
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="a74249f4a273eef9e6c1a3d4349c3503"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="a321c3abb59493b8dcf0f5a1e713c73b"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="b5d0c4c6f7584de191ca719d1f6bddf3"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="b866fe62ada09e59be3ac7ba11b3dea8"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="6118b4085c283c8991cfd298e5b83458"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="6aaf98e497c00a1a8c864235468cc987"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="081d5b7f03cd46b3e215ee30e7fa8df6"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="421c6968818e6ddabe3afcc944307825"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="921ec964585dec4d3f974b0bebf2e79d"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="e40f60ffc11006b47b6c7a569daf1f71"></ins>
+          </div>
+
+          <!-- 
+from 31: -->
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="12e9d2c6768c36dfa4de4b3bb8d57987"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="e6dbdc5ad6e079d6026a8264d1a694dc"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="d17ac088228d06bbad2c1f6f90e3e21a"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="8e3aaf3b649025ee46a0c4fc69500c9a"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="268e66d2ffaaf1b0e79aa3d8662b0a17"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="105ee3fcfcb44c10c67a06622dae097a"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="0b740ef3f1ecda1e56bc7b4014920f77"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="920e1c2f090cc9e548726185c0cacfc5"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="54993b1edfea9d247ea0740454a146a4"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="c4cd7c8ce2d5335f18b8290eeec59e8e"></ins>
+          </div>
+
+
+          <!-- from 41:
+ -->
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="b1e4ac00948a3dd94b7c9160310a47a8"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="1b9d9c815b1f168be20cfe038a00f90c"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="21c06c0220031195fc5cb599db4873fd"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="ba775c95cdadf7665e732d2a388e624a"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="6f023d55d87bdff368ed8b2baa100db9"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="f167677d4667f4243b83e620ffa2c917"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="8982b426faa6af72614d9ba69f7619fa"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="22fb647091321bc8fd4aea2b03afc137"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="3d0ca267cb080912bac8db518b662653"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="066f899fbb3bf1caf38a39627cca70a7"></ins>
+          </div>
+
+
+          <!-- from 51:
+ -->
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="d67c5018f57e9269a144a53709b2f272"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="f2baa48991ef1c1f0ce7bbff2f352efb"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="21a4341b28bc613c1fea284924ffd530"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="1b0ebbc9a3fde7a3bde4d9c4546e3552"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="eb6d9938fe60367639ecfa5237c989f0"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="16aae376a88b2f0431f218e489e4a6f1"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="df9c3ee2bfa75c3e186a2bf7206978ed"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="5893a2deecf730eef1d633e5272a984e"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="d3346e556689da9010b1b533a621204b"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="a63795041ba2a6b0b185ddc09e970abe"></ins>
+          </div>
+
+          <!-- 
+from 61: -->
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="720a29cab4f1ad4783296c1a51642be4"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="192ec03daaa746d33adb8aaaf579c108"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="3ee03390c54c0a8110f7caa276a82bc5"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="3e2fbd38afa8065849f9fcebc3df7b19"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="ec71a94f2de39450c9ad4496366d01ca"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="96a7094de1d1c5277cdab246c74794fc"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="e3a3d0c038fc12b7a8d54fa392d71225"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="f14ae375a8d5ed3c2426b869bf8b628b"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="ae051fdfb7e3434666314ab492eca559"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="ec0f293bb5663ec60c79341daff844f1"></ins>
+          </div>
+
+          <!-- from 71: -->
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="b00690ca6a6edc7d4d3bacb6df860c99"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="a3266bcbf2ae7c2b4c53d7bf9b7f0c12"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="913dc83aa1b0aed1300be210c4b1c89d"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="522027c6810dbba2776b42bad184bfde"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="40f8398b890e04f917f5cb7b77945cdd"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="cdfab381b313a6be430c8ac43b89a87e"></ins>
+          </div>
+
+          <div class="ad-area">
+            <ins class="cdacab4f" data-key="412a9162453e238ad716fda610ed3ad4"></ins>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: red">
+      </br>
+      </br>
+      </br>
+      </br>
+    </footer>
+
+</body>
+
+</html>

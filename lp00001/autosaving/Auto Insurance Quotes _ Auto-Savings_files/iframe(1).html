@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0222)https://d2m2wsoho8qq12.cloudfront.net/iframe.html?token=5569FF27-DF3B-C9B7-59A2-F174E49C35B0&apiurl=https%3A%2F%2Fcreate.leadid.com%2F2.11.7&lck=1BB270D1-0FD6-8B6B-EF5E-AC1F8668F748&lac=005B3277-7DD6-01E2-6D37-54D36A1B5104 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+</head>
+<body>
+  <script type="text/javascript">
+  function init() {
+    // Retrieve the LeadiD token from this URL's querystring
+    var token = getQueryVariable('token');
+
+    var apiurl = getQueryVariable('apiurl');
+    // Check if we have a uuid in cookie jar
+    var uuidCookie = getCookie('uuid');
+
+    var lck = getQueryVariable('lck');
+    var lac = getQueryVariable('lac');
+
+    // Check if we have a UUID in local storage
+    try {
+      var uuidLocalStorage = 'object' == typeof localStorage && localStorage.getItem('uuid');
+    } catch(error) {
+      // Catch security errors in browsers like Chrome that are averse to local storage
+      // access attempts in the context of an iframe when 3rd party cookies are blocked
+      var uuidLocalStorage = 0;
+    }
+
+    var uuid = uuidCookie || uuidLocalStorage;
+    var method = (+!!uuidLocalStorage * 2) + (+!!uuidCookie);
+
+    var options = {
+      token: token,
+      apiurl: apiurl,
+      uuid: uuid,
+      method: method,
+      lck: lck,
+      lac: lac
+    };
+
+    addNewIframe(options);
+  }
+
+  /**
+   * Add forward to new iframe to page
+   *
+   * @param Object options
+   *  An object of values to put in the querystring of the new iframe
+   */
+  function addNewIframe(options) {
+    var frame = document.createElement('iframe');
+    var newFrameUrl = "https://deviceid.trueleadid.com/iframe.html";
+    var queryStringVals = [];
+    var key;
+    for (key in options) {
+      if (options.hasOwnProperty(key)) {
+        var value = options[key];
+        if (value) {
+          queryStringVals.push([key, value].join("="))
+        }
+      }
+    }
+    newFrameUrl += "?" + queryStringVals.join("&");
+    frame.src = newFrameUrl;
+
+    document.body.appendChild(frame);
+  }
+
+  /**
+   * Check whether a variable is defined.
+   *
+   * @param String val
+   *   The variable to test
+   *
+   * @return Boolean
+   */
+  function isDefined(val) {
+    return 'undefined' != typeof val;
+  };
+
+  /**
+   * Gets the value of a variable in the query string of this URL.
+   *
+   * @param String variable
+   *   Name of the variable to get the value of
+   *
+   * @return String
+   */
+  function getQueryVariable(variable) {
+    var querystring = location.search.split('?')[1];
+    if (isDefined(querystring)) {
+      var vars = querystring.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (pair[0] == variable) {
+          return isDefined(pair[1]) ? pair[1] : '';
+        }
+      }
+    }
+
+    return null; // Query Variable not found
+  }
+
+
+  /**
+   * Polyfill for String.trim()
+   */
+  if (!String.prototype.trim) {
+    String.prototype.trim = function() {
+      return this.replace(/^\s+|\s+$/gm, '');
+    }
+  }
+
+  /**
+   * Gets a cookie from the browser
+   *
+   * @param String name
+   *   Cookie to get the value of
+   *
+   * @return String
+   */
+  function getCookie(name) {
+    var cookieName
+      , cookieValue
+      , cookieArray = document.cookie.split(';');
+
+    for (var index = 0; index < cookieArray.length; ++index) {
+      cookieName  = cookieArray[index].substr(0, cookieArray[index].indexOf('=')).trim();
+      cookieValue = cookieArray[index].substr(cookieArray[index].indexOf('=') + 1);
+
+      if (cookieName == name) {
+        return unescape(cookieValue);
+      }
+    }
+  }
+
+
+  (function() {
+    try {
+      init();
+    } catch(error) {
+      // Silently swallow error here
+    }
+  })();
+  </script><iframe src="./iframe.html"></iframe>
+
+
+</body></html>

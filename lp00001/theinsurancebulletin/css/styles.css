@@ -1,0 +1,238 @@
+html * {
+  color: #000;
+  font-family: "Lato" !important;
+}
+
+.logo {
+  width: 16rem;
+  height: 4rem;
+}
+
+.navbar {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-start {
+  margin-left: 3rem;
+}
+
+.navbar-link {
+  padding-right: 0 !important;
+  font-weight: 800;
+  color: black;
+}
+
+.navbar-link::after {
+  content: "";
+  border: none !important;
+}
+
+.navbar-link-icon {
+  margin-top: 2px;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-left: 5px;
+  color: black;
+}
+
+.navbar-end .navbar-item .buttons a {
+  margin-left: 0.5rem;
+}
+
+.breadcrumb-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.breadcrumb {
+  margin-bottom: 0 !important;
+  font-size: 0.75rem !important;
+}
+
+.breadcrumb a {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+
+.disclosure {
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+.gray-background {
+  position: absolute;
+  height: 50rem;
+  width: 100%;
+  background-color: rgba(244, 244, 244, 1);
+}
+
+.main {
+  position: relative;
+}
+
+.hero {
+  max-width: 1024px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+}
+
+.hero .title {
+  font-size: 3rem;
+  font-family: "Roboto" !important;
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.article-details {
+  display: flex;
+}
+
+.article-details > * {
+  font-family: "Roboto" !important;
+  margin-bottom: 1.5rem;
+}
+
+.article-by {
+  text-decoration: underline;
+}
+
+.v-divider {
+  width: 2px;
+  background-color: black;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.para-big {
+  font-size: 1.5rem;
+  line-height: 1.66667;
+  font-weight: 400;
+}
+
+.para-big a strong {
+  color: rgba(30, 137, 204, 1);
+}
+
+.image-guy {
+  margin-top: 1.5rem;
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+
+.big-title {
+  font-size: 30px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.33333;
+  font-weight: 600;
+  font-family: "Josefin Sans" !important;
+}
+
+.medium-title {
+  font-size: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.33333;
+  font-weight: 600;
+  font-family: "Josefin Sans" !important;
+}
+
+.para {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.para.mt {
+  margin-top: 1rem;
+}
+
+.divider-red {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-top-width: 2px;
+  background: rgba(186, 43, 9, 1);
+}
+
+.explanation-sections {
+  display: flex;
+}
+
+.explanation-sections .sections:first-child {
+  width: 74%;
+}
+
+.explanation-sections .sections:last-child {
+  width: 26%;
+  padding-left: 2rem;
+}
+
+.explanation-sections .sections:last-child h3 {
+  margin-bottom: 0 !important;
+}
+
+.explanation-sections .sections:last-child p {
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Roboto" !important;
+}
+
+.name span, .name a {
+  font-family: "Josefin Sans" !important;
+}
+
+.name a {
+  text-decoration: underline;
+}
+
+.more-about-holly a {
+    color: rgb(19 91 135);
+    font-style: italic;
+    font-size: 16px;
+}
+
+.holly {
+    border-radius: 1000px;
+    float: left;
+    margin-right: 1rem;
+    height: 100px;
+    width: 100px;
+}
+
+.footer {
+    background-color: transparent;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header .footer-menu a {
+    margin-left: 1rem;
+    font-size: 14px;
+    font-family: "Roboto" !important;
+}
+
+.footer-right {
+    font-weight: 800;
+    font-family: "Josefin Sans" !important;
+}
+
+.footer-logo {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.navbar-burger {
+  height: 80px;
+}

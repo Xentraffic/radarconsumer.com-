@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>The Insurance Bulletin</title>
+    <script>(function () { !function (l) { function r(b, a) { var h = (65535 & b) + (65535 & a); return (b >> 16) + (a >> 16) + (h >> 16) << 16 | 65535 & h } function p(b, a, h, q, x, g) { b = r(r(a, b), r(q, g)); return r(b << x | b >>> 32 - x, h) } function g(b, a, h, q, g, k, c) { return p(a & h | ~a & q, b, a, g, k, c) } function k(b, a, h, q, g, k, c) { return p(a & q | h & ~q, b, a, g, k, c) } function m(b, a, h, q, g, k, c) { return p(a ^ h ^ q, b, a, g, k, c) } function n(b, a, h, q, g, k, c) { return p(h ^ (a | ~q), b, a, g, k, c) } function u(b, a) { var h, q, l, p; b[a >> 5] |= 128 << a % 32; b[14 + (a + 64 >>> 9 << 4)] = a; var c = 1732584193, d = -271733879, e = -1732584194, f = 271733878; for (a = 0; a < b.length; a += 16)d = n(d = n(d = n(d = n(d = m(d = m(d = m(d = m(d = k(d = k(d = k(d = k(d = g(d = g(d = g(d = g(q = d, e = g(l = e, f = g(p = f, c = g(h = c, d, e, f, b[a], 7, -680876936), d, e, b[a + 1], 12, -389564586), c, d, b[a + 2], 17, 606105819), f, c, b[a + 3], 22, -1044525330), e = g(e, f = g(f, c = g(c, d, e, f, b[a + 4], 7, -176418897), d, e, b[a + 5], 12, 1200080426), c, d, b[a + 6], 17, -1473231341), f, c, b[a + 7], 22, -45705983), e = g(e, f = g(f, c = g(c, d, e, f, b[a + 8], 7, 1770035416), d, e, b[a + 9], 12, -1958414417), c, d, b[a + 10], 17, -42063), f, c, b[a + 11], 22, -1990404162), e = g(e, f = g(f, c = g(c, d, e, f, b[a + 12], 7, 1804603682), d, e, b[a + 13], 12, -40341101), c, d, b[a + 14], 17, -1502002290), f, c, b[a + 15], 22, 1236535329), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 1], 5, -165796510), d, e, b[a + 6], 9, -1069501632), c, d, b[a + 11], 14, 643717713), f, c, b[a], 20, -373897302), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 5], 5, -701558691), d, e, b[a + 10], 9, 38016083), c, d, b[a + 15], 14, -660478335), f, c, b[a + 4], 20, -405537848), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 9], 5, 568446438), d, e, b[a + 14], 9, -1019803690), c, d, b[a + 3], 14, -187363961), f, c, b[a + 8], 20, 1163531501), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 13], 5, -1444681467), d, e, b[a + 2], 9, -51403784), c, d, b[a + 7], 14, 1735328473), f, c, b[a + 12], 20, -1926607734), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 5], 4, -378558), d, e, b[a + 8], 11, -2022574463), c, d, b[a + 11], 16, 1839030562), f, c, b[a + 14], 23, -35309556), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 1], 4, -1530992060), d, e, b[a + 4], 11, 1272893353), c, d, b[a + 7], 16, -155497632), f, c, b[a + 10], 23, -1094730640), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 13], 4, 681279174), d, e, b[a], 11, -358537222), c, d, b[a + 3], 16, -722521979), f, c, b[a + 6], 23, 76029189), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 9], 4, -640364487), d, e, b[a + 12], 11, -421815835), c, d, b[a + 15], 16, 530742520), f, c, b[a + 2], 23, -995338651), e = n(e, f = n(f, c = n(c, d, e, f, b[a], 6, -198630844), d, e, b[a + 7], 10, 1126891415), c, d, b[a + 14], 15, -1416354905), f, c, b[a + 5], 21, -57434055), e = n(e, f = n(f, c = n(c, d, e, f, b[a + 12], 6, 1700485571), d, e, b[a + 3], 10, -1894986606), c, d, b[a + 10], 15, -1051523), f, c, b[a + 1], 21, -2054922799), e = n(e, f = n(f, c = n(c, d, e, f, b[a + 8], 6, 1873313359), d, e, b[a + 15], 10, -30611744), c, d, b[a + 6], 15, -1560198380), f, c, b[a + 13], 21, 1309151649), e = n(e, f = n(f, c = n(c, d, e, f, b[a + 4], 6, -145523070), d, e, b[a + 11], 10, -1120210379), c, d, b[a + 2], 15, 718787259), f, c, b[a + 9], 21, -343485551), c = r(c, h), d = r(d, q), e = r(e, l), f = r(f, p); return [c, d, e, f] } function t(b) { var a, h = "", g = 32 * b.length; for (a = 0; a < g; a += 8)h += String.fromCharCode(b[a >> 5] >>> a % 32 & 255); return h } function v(b) { var a, h = []; h[(b.length >> 2) - 1] = void 0; for (a = 0; a < h.length; a += 1)h[a] = 0; var g = 8 * b.length; for (a = 0; a < g; a += 8)h[a >> 5] |= (255 & b.charCodeAt(a / 8)) << a % 32; return h } function y(b) { var a, h = ""; for (a = 0; a < b.length; a += 1) { var g = b.charCodeAt(a); h += "0123456789abcdef".charAt(g >>> 4 & 15) + "0123456789abcdef".charAt(15 & g) } return h } function z(b) { b = unescape(encodeURIComponent(b)); return t(u(v(b), 8 * b.length)) } function A(b, a) { b = unescape(encodeURIComponent(b)); a = unescape(encodeURIComponent(a)); var h, g = v(b), k = [], l = []; k[15] = l[15] = void 0; 16 < g.length && (g = u(g, 8 * b.length)); for (b = 0; 16 > b; b += 1)k[b] = 909522486 ^ g[b], l[b] = 1549556828 ^ g[b]; return h = u(k.concat(v(a)), 512 + 8 * a.length), t(u(l.concat(h), 640)) } function w(b, a, g) { return a ? g ? A(a, b) : y(A(a, b)) : g ? z(b) : y(z(b)) } "function" == typeof define && define.amd ? define(function () { return w }) : "object" == typeof module && module.exports ? module.exports = w : l.md5 = w }(this); var l = (new URLSearchParams(window.location.search)).get("lptoken"); if (l) { var t = l.substr(0, 2) + l.substr(4, 2) + l.substr(8, 2) + l.substr(12, 2) + l.substr(16, 2); l = l.substr(2, 2) + l.substr(6, 2) + l.substr(10, 2) + l.substr(14, 2) + l.substr(18, 2); var p = md5("hyezao8zhjmzzqajjuiqhdqshtgaajx7w4mp07ukq710x9yk" + t + navigator.userAgent); p = p.substr(0, 2) + p.substr(5, 2) + p.substr(12, 2) + p.substr(19, 2) + p.substr(26, 2); if (Date.now() / 1E3 > Number(t) || p !== l) window && window.stop() || stop() } else window && window.stop() || stop() })();</script>
+</head>
+
+<body>
+    <script>AFKClickUrl = "https://intedure-virsoles.com/click";</script>
+    <script async src="https://intedure-virsoles.com/hp"></script>
+    <div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://intedure-virsoles.com/click">
+                    <svg class="logo" width="612.64" height="123.46" viewBox="0 0 612.64 123.46">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #095472;
+                                }
+
+                                .cls-2 {
+                                    fill: url(#radial-gradient);
+                                }
+
+                                .cls-3 {
+                                    fill: #fff;
+                                }
+                            </style>
+                            <radialGradient id="radial-gradient" cx="61.73" cy="61.73" r="61.73"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#36d0da"></stop>
+                                <stop offset="1" stop-color="#095472"></stop>
+                            </radialGradient>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g>
+                                    <g>
+                                        <path class="cls-1" d="M152.72,45.88V82h-4.37V45.88h-11.6l.81-4.14h26l.8,4.14Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M190.11,66.73V82h-4V67.07c0-4.71-2.7-7.18-6.55-7.18-4.19,0-7.24,3-7.24,7.75V82h-4V41l4-.8V59.78a9.68,9.68,0,0,1,7.87-3.68C185.8,56.1,190.11,60,190.11,66.73Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M217.67,74.14l1.56,3.67a15.69,15.69,0,0,1-11.15,4.71,13,13,0,0,1-13.44-13.15A13.14,13.14,0,0,1,208,56.1a11.65,11.65,0,0,1,11.89,10.45l-20.51,6.67a9.21,9.21,0,0,0,8.79,5.63C211.7,78.85,214.92,77.29,217.67,74.14Zm-19.06-4.77v.23l16.54-5.34a7.51,7.51,0,0,0-7.24-4.48A9.36,9.36,0,0,0,198.61,69.37Z">
+                                        </path>
+                                        <path class="cls-1" d="M235.25,42.14l4.36-.8V82h-4.36Z"></path>
+                                        <path class="cls-1"
+                                            d="M268.39,66.73V82h-4V67.07c0-4.77-2.7-7.24-6.55-7.24-4.19,0-7.24,3-7.24,7.81V82h-4V57l3.79-.75v3.45a10.15,10.15,0,0,1,8-3.62C264.14,56.1,268.39,60,268.39,66.73Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M273.73,79.88l.69-3.68C276.94,78,279.24,79,281.77,79s4.31-1.49,4.31-4c0-1.73-.87-3-4.66-4.2l-1-.34c-4-1.32-6-4-6-7.41,0-4,3.16-6.95,7.64-6.95a14.8,14.8,0,0,1,6.89,1.95l-.75,3.68A12.4,12.4,0,0,0,282,59.66c-2.47,0-3.85,1.44-3.85,3.33,0,1.61.86,2.76,4.19,3.91l1,.34c4.25,1.38,6.6,4,6.6,7.76,0,4.42-3.33,7.52-8.21,7.52A14.4,14.4,0,0,1,273.73,79.88Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M316,56.27V82h-3.79V78.9a10,10,0,0,1-7.93,3.62c-5.68,0-9.88-3.85-9.88-10.62V57l4-.75V71.55c0,4.71,2.65,7.18,6.44,7.18,4.13,0,7.12-3,7.12-7.75V57Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M335.76,56.27v4.08c-5.69,0-8.62,2.76-8.62,8.44V82h-4V57l3.79-.75v4.2C328.69,57.77,331.62,56.27,335.76,56.27Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M354.42,82l-.17-1.73a9.57,9.57,0,0,1-6.32,2.3,9.25,9.25,0,1,1,0-18.49,9,9,0,0,1,6,2.18V64.66c0-3.28-1.38-4.94-5.46-4.94a18.18,18.18,0,0,0-6.14,1.15l.75-3.74a17.16,17.16,0,0,1,5.57-.92c6.14,0,9.3,3,9.3,8.1V77.06l.17,4.89Zm-.11-8.68a6,6,0,0,0-12,0,5.82,5.82,0,0,0,6,5.8A5.88,5.88,0,0,0,354.31,73.27Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M386.41,66.73V82h-4V67.07c0-4.77-2.7-7.24-6.55-7.24-4.19,0-7.23,3-7.23,7.81V82h-4V57l3.8-.75v3.45a10.14,10.14,0,0,1,8-3.62C382.16,56.1,386.41,60,386.41,66.73Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M391,69.31A13.29,13.29,0,0,1,404.33,56.1,15.15,15.15,0,0,1,411,57.71l-.74,3.85a11.48,11.48,0,0,0-5.92-1.73,9.48,9.48,0,0,0,0,19,11.81,11.81,0,0,0,6.2-1.9l.69,4a15.86,15.86,0,0,1-6.89,1.66A13.32,13.32,0,0,1,391,69.31Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M437,74.14l1.55,3.67a15.68,15.68,0,0,1-11.14,4.71A13,13,0,0,1,414,69.37,13.14,13.14,0,0,1,427.3,56.1a11.64,11.64,0,0,1,11.89,10.45l-20.5,6.67a9.2,9.2,0,0,0,8.79,5.63C431,78.85,434.25,77.29,437,74.14Zm-19.07-4.77v.23l16.54-5.34a7.49,7.49,0,0,0-7.23-4.48A9.37,9.37,0,0,0,417.94,69.37Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M478,71c0,6.49-5.11,11-12.46,11H454.3V41.74h10.62C472,41.74,477,46.05,477,52.19a9.66,9.66,0,0,1-6.32,9.08C475.15,62.82,478,66.38,478,71Zm-19.3-25.1V59.55h6.26c4.48,0,7.64-2.88,7.64-7.07,0-3.9-3.16-6.6-7.64-6.6Zm14.82,24.87c0-4.2-3.27-7.07-8-7.07h-6.84V77.81h6.84C470.21,77.81,473.48,74.94,473.48,70.75Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M503.46,56.27V82h-3.79V78.9a10,10,0,0,1-7.93,3.62c-5.68,0-9.88-3.85-9.88-10.62V57l4-.75V71.55c0,4.71,2.65,7.18,6.44,7.18,4.13,0,7.12-3,7.12-7.75V57Z">
+                                        </path>
+                                        <path class="cls-1" d="M510.18,41l4-.8V82h-4Z"></path>
+                                        <path class="cls-1" d="M521.09,41l4-.8V82h-4Z"></path>
+                                        <path class="cls-1"
+                                            d="M552.74,74.14l1.55,3.67a15.69,15.69,0,0,1-11.15,4.71A13,13,0,0,1,529.7,69.37,13.14,13.14,0,0,1,543,56.1a11.65,11.65,0,0,1,11.89,10.45l-20.51,6.67a9.21,9.21,0,0,0,8.79,5.63C546.76,78.85,550,77.29,552.74,74.14Zm-19.07-4.77v.23l16.54-5.34A7.51,7.51,0,0,0,543,59.78,9.37,9.37,0,0,0,533.67,69.37Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M566.12,60.35V74.71c0,2.58,1.43,4,3.67,4a9.94,9.94,0,0,0,3.68-.8V81.6a10.42,10.42,0,0,1-4.08.81c-4.42,0-7.29-2.76-7.29-7.41V60.35h-3.74l.69-3.68h3.05V51.1l4-2.41v8h7.35v3.68Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M579.21,46.91a2.88,2.88,0,1,1,2.87,2.87A2.84,2.84,0,0,1,579.21,46.91Zm.86,10.17,4-.81V82h-4Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M612.64,66.73V82h-4V67.07c0-4.77-2.7-7.24-6.55-7.24-4.19,0-7.23,3-7.23,7.81V82h-4V57l3.8-.75v3.45a10.12,10.12,0,0,1,8-3.62C608.39,56.1,612.64,60,612.64,66.73Z">
+                                        </path>
+                                    </g>
+                                    <circle class="cls-2" cx="61.73" cy="61.73" r="61.73"></circle>
+                                    <g>
+                                        <path class="cls-3" d="M41,46V82H36.66V46H25.06l.8-4.13h26L52.63,46Z"></path>
+                                        <path class="cls-3" d="M59.86,42.23l4.37-.8V82H59.86Z"></path>
+                                        <path class="cls-3"
+                                            d="M98.4,71.06c0,6.49-5.11,11-12.46,11H74.74V41.83H85.36c7.12,0,12.12,4.3,12.12,10.45a9.67,9.67,0,0,1-6.32,9.08C95.59,62.91,98.4,66.47,98.4,71.06ZM79.1,46V59.63h6.26c4.48,0,7.64-2.87,7.64-7.06C93,48.66,89.84,46,85.36,46ZM93.92,70.83c0-4.19-3.27-7.06-8-7.06H79.1V77.9h6.84C90.65,77.9,93.92,75,93.92,70.83Z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown">
+                        <a href="https://intedure-virsoles.com/click" class="navbar-link">
+                            <span>Car</span>
+                            <svg class="navbar-link-icon" viewBox="0 0 8.897 5.504">
+                                <path
+                                    d="M14.652 33.5a.273.273 0 0 0-.417 0l-3.663 4.117L6.9 33.5a.273.273 0 0 0-.417 0 .36.36 0 0 0 0 .467l3.871 4.343a.273.273 0 0 0 .208.1.284.284 0 0 0 .208-.1l3.871-4.343a.352.352 0 0 0 .011-.467z"
+                                    transform="translate(-6.121 -33.15)" fill="#0d0d0d" stroke="#000"
+                                    stroke-width="0.5"></path>
+                            </svg>
+                        </a>
+                        <div class="navbar-dropdown"></div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown">
+                        <a href="https://intedure-virsoles.com/click" class="navbar-link">
+                            <span>Home</span>
+                            <svg class="navbar-link-icon" viewBox="0 0 8.897 5.504">
+                                <path
+                                    d="M14.652 33.5a.273.273 0 0 0-.417 0l-3.663 4.117L6.9 33.5a.273.273 0 0 0-.417 0 .36.36 0 0 0 0 .467l3.871 4.343a.273.273 0 0 0 .208.1.284.284 0 0 0 .208-.1l3.871-4.343a.352.352 0 0 0 .011-.467z"
+                                    transform="translate(-6.121 -33.15)" fill="#0d0d0d" stroke="#000"
+                                    stroke-width="0.5"></path>
+                            </svg>
+                        </a>
+                        <div class="navbar-dropdown"></div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown">
+                        <a href="https://intedure-virsoles.com/click" class="navbar-link">
+                            <span>Health</span>
+                            <svg class="navbar-link-icon" viewBox="0 0 8.897 5.504">
+                                <path
+                                    d="M14.652 33.5a.273.273 0 0 0-.417 0l-3.663 4.117L6.9 33.5a.273.273 0 0 0-.417 0 .36.36 0 0 0 0 .467l3.871 4.343a.273.273 0 0 0 .208.1.284.284 0 0 0 .208-.1l3.871-4.343a.352.352 0 0 0 .011-.467z"
+                                    transform="translate(-6.121 -33.15)" fill="#0d0d0d" stroke="#000"
+                                    stroke-width="0.5"></path>
+                            </svg>
+                        </a>
+                        <div class="navbar-dropdown"></div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown">
+                        <a href="https://intedure-virsoles.com/click" class="navbar-link">
+                            <span>Life</span>
+                            <svg class="navbar-link-icon" viewBox="0 0 8.897 5.504">
+                                <path
+                                    d="M14.652 33.5a.273.273 0 0 0-.417 0l-3.663 4.117L6.9 33.5a.273.273 0 0 0-.417 0 .36.36 0 0 0 0 .467l3.871 4.343a.273.273 0 0 0 .208.1.284.284 0 0 0 .208-.1l3.871-4.343a.352.352 0 0 0 .011-.467z"
+                                    transform="translate(-6.121 -33.15)" fill="#0d0d0d" stroke="#000"
+                                    stroke-width="0.5"></path>
+                            </svg>
+                        </a>
+                        <div class="navbar-dropdown"></div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown">
+                        <a href="https://intedure-virsoles.com/click" class="navbar-link">
+                            <span>Other</span>
+                            <svg class="navbar-link-icon" viewBox="0 0 8.897 5.504">
+                                <path
+                                    d="M14.652 33.5a.273.273 0 0 0-.417 0l-3.663 4.117L6.9 33.5a.273.273 0 0 0-.417 0 .36.36 0 0 0 0 .467l3.871 4.343a.273.273 0 0 0 .208.1.284.284 0 0 0 .208-.1l3.871-4.343a.352.352 0 0 0 .011-.467z"
+                                    transform="translate(-6.121 -33.15)" fill="#0d0d0d" stroke="#000"
+                                    stroke-width="0.5"></path>
+                            </svg>
+                        </a>
+                        <div class="navbar-dropdown"></div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a href="https://intedure-virsoles.com/click" target="_blank"><svg stroke="currentColor"
+                                    fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                    class="social-links___StyledFaTwitter-sc-10lnh60-1 iuqXyX" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                </svg></a>
+                            <a href="https://intedure-virsoles.com/click" target="_blank"><svg stroke="currentColor"
+                                    fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                                    class="social-links___StyledFaFacebookF-sc-10lnh60-2 cfGlbn" height="1em"
+                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="gray-background"></div>
+            <div class="main">
+                <div class="breadcrumb-container">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="https://intedure-virsoles.com/click">Home</a></li>
+                            <li><a href="https://intedure-virsoles.com/click">Car Insurance</a></li>
+                            <li class="is-active"><a href="https://intedure-virsoles.com/click" aria-current="page">7
+                                    Biggest Car Insurance Discounts to
+                                    Lower
+                                    Your Premiums</a></li>
+                        </ul>
+                    </nav>
+                    <a class="disclosure">Advertiser Disclosure</a>
+                </div>
+                <section class="hero">
+                    <div class="hero-body">
+                        <p class="title">
+                            7 Biggest Car Insurance Discounts to Lower Your Premiums
+                        </p>
+                        <div class="article-details">
+                            <div>by <a class="article-by">Holly Johnson</a></div>
+                            <div class="v-divider"></div>
+                            <div>Updated September 2, 2021</div>
+                            <div class="v-divider"></div>
+                            <div>3 Min Read</div>
+                        </div>
+                        <p class="para-big">There are numerous car insurance secrets no one tells you about unless you
+                            know to ask. For
+                            example, huge discounts can help you save 25% or more on your monthly insurance premiums,
+                            and <a href="#qs-anchor"><strong>it's possible you already qualify</strong></a>. If you're
+                            eligible for multiple promotions, you stand to save a whole lot more.</p>
+                        <img class="image-guy" src="./static/man-lies-down-on-pile-of-dollars.jpg.webp" />
+                        <div class="explanation-sections">
+                            <div class="sections">
+                                <h2 class="big-title">Discounts you could be eligible for:</h2>
+                                <p class="para">The many discounts include price reductions for low mileage drivers,
+                                    having
+                                    a good driving record with no driving violations, DUIs or tickets. Being
+                                    accident-free
+                                    in the past three years, insuring multiple vehicles or have airbags. Even having an
+                                    anti-theft system installed can net you a discount. </p>
+                                <h2 class="big-title">Explore Top-Rated Insurers <span id="title-region">In
+                                        Quebec</span>!</h2>
+                                <p class="para">If you're eligible for any of the discounts listed above, you could
+                                    easily
+                                    save 22%, 25% or more on your auto insurance premiums. But you won't know unless you
+                                    check.</p>
+                                <p class="para mt">It's easy to see which discounts you may be eligible for with the
+                                    tool
+                                    above. Checking your new rate is free and easy, and it only takes a few minutes.</p>
+                                <p class="para mt">The list below explains the best car insurance discounts out there,
+                                    who
+                                    can qualify and how much you might be able to save.</p>
+                                <h3 class="medium-title">Passive Restraint Discount</h3>
+                                <p class="para">This type of discount is available for drivers who have a car with
+                                    <strong>factory-installed air bags</strong>, seat belts, or another passive
+                                    restraint
+                                    system. While the amount of any potential discount can vary, State Farm says having
+                                    this
+                                    equipment saves their customers up to 40% off their Medical Payments coverage.&nbsp;
+                                </p>
+                                <h3 class="medium-title">New Customer Discount</h3>
+                                <p class="para">Being a new customer can also help you secure lower auto insurance rates
+                                    -
+                                    at least at first. This is part of the reason you can save so much just by being
+                                    willing
+                                    to change insurance companies every few years.</p>
+                                <h3 class="medium-title">Low mileage discounts</h3>
+                                <p class="para">If you're an <strong>infrequent driver or someone who doesn't put a lot
+                                        of
+                                        miles on their car</strong>, you should make sure you're not overpaying for
+                                    coverage
+                                    you barely use. Look for an auto insurance provider who offers discounts for low
+                                    mileage, and you may be able to pay less when you drive less.</p>
+                                <h3 class="medium-title">No DUI Insurance Discount</h3>
+                                <p class="para">If you don't have a DUI, you will be in the best possible position to
+                                    qualify for lower car insurance rates and other available discounts.&nbsp;</p>
+                                <h3 class="medium-title">Early Quote Discount</h3>
+                                <p class="para">Getting an early quote for auto insurance can also lead to savings,
+                                    although
+                                    your discount can vary. If you sign your policy at least seven days before it
+                                    becomes
+                                    effective, you can also qualify for a discount known as an "early signing discount."
+                                </p>
+                                <h3 class="medium-title">Anti-Theft System Discount</h3>
+                                <p class="para">Having an anti-theft system can make it considerably more difficult for
+                                    thieves to vandalize or steal your car. Auto insurance companies are willing to
+                                    offer
+                                    discounts for this type of equipment as a result. Your savings for an anti-theft
+                                    device
+                                    can be as much as 23%.</p>
+                                <h3 class="medium-title">Good Driver Discount</h3>
+                                <p class="para">Being a "<strong>good driver</strong>" in an insurance company's eyes
+                                    typically means you have been accident-free for at least five years. This is
+                                    excellent
+                                    news for insurers since you pose much less of a risk and have a proven driving
+                                    history,
+                                    and you can save more than 20% off your auto insurance premiums as a result.</p>
+                                <h3 class="medium-title">Defensive Driver Discount</h3>
+                                <p class="para">If you have taken a defensive driving course, you're in a great position
+                                    to
+                                    save money on car insurance. Taking a driver education course can help you save up
+                                    to 8%
+                                    off the total cost of a policy.</p>
+                                <h3 class="medium-title">Multi-Vehicle Discount</h3>
+                                <p class="para">You can also score a "bulk discount" on your auto insurance by insuring
+                                    more
+                                    than one vehicle within a single policy. Your discount will vary depending on how
+                                    many
+                                    vehicles you insure, the types of coverage you need, your coverage limits and other
+                                    details.</p>
+                                <h3 class="medium-title">Good Student Discount</h3>
+                                <p class="para">You can also save money by qualifying for a smart student or good
+                                    student
+                                    discount, although the terms and conditions for these discounts vary from company to
+                                    company. With Allstate, smart student discounts go to unmarried students who are
+                                    under
+                                    the age of 25 and have grades that average a B- or better or a GPA of 2.7 or above.
+                                    However, students can also qualify by completing a teenSMART driver education
+                                    program or
+                                    attending school at least 100 miles away from where their car is stored.</p>
+                                <hr class="divider-red" />
+
+                                <div>
+
+                                    <h3 class="name medium-title"><span>About <a
+                                                href="https://intedure-virsoles.com/click">Holly
+                                                Johnson</a></span></h3>
+                                    <img class="holly"
+                                        src="https://intedure-virsoles.com/clickstatic/93e3df62adada7aae08e1307e7909e4f/4c7d8/holly-johnson-headshot.jpg.webp">
+                                    <p class="para">Holly D. Johnson is a nationally recognized expert and award-winning
+                                        insurance
+                                        writer who covers life insurance, health insurance, and various other
+                                        insurance-related topics for corporations and well-known magazines with millions
+                                        of readers. Johnson also covers personal finance, credit, credit cards, and
+                                        loyalty programs for a variety of publications including CNN Underscored,
+                                        Bankrate, CreditCards.com and Forbes Advisor.&nbsp;</p>
+                                    <p class="para mt">The author is also the founder of Club Thrifty and the co-author
+                                        of "Zero Down
+                                        Your Debt: Reclaim Your Income and Build a Life You’ll Love."&nbsp;She and her
+                                        husband Greg live in Central Indiana with their two daughters where they enjoy a
+                                        debt-free lifestyle and travel up to 20 weeks of the year.</p>
+                                    <p class="para mt more-about-holly"><a
+                                            href="https://intedure-virsoles.com/click">More by Holly
+                                            Johnson</a></p>
+                                </div>
+                            </div>
+                            <div class="sections">
+                                <h3 class="medium-title">Editors Note</h3>
+                                <p>Our aim is to empower our readers to be fully informed about how insurance works and
+                                    have access to relevant knowledge and available products in the marketplace. With
+                                    that in mind, in addition to the insurance information on our site, we also provide
+                                    links to various insurance companies to make it easier for you to review and compare
+                                    products.&nbsp;If you follow a link to these sites and/or purchase a product from
+                                    these companies we may receive compensation from them.</p>
+                            </div>
+                        </div>
+                        <footer class="footer">
+                            <div class="footer-header">
+                                <div class="footer-right">©2021 The Insurance Bulletin. All rights reserved.</div>
+                                <div class="footer-menu"><a href="https://intedure-virsoles.com/click">About Us</a><a
+                                        href="https://intedure-virsoles.com/click">Privacy
+                                        Policy</a><a href="https://intedure-virsoles.com/click">Terms of
+                                        Use</a></div>
+                            </div>
+                            <div class="footer-logo">
+                                <a href="https://intedure-virsoles.com/click">
+                                    <svg class="logo" width="612.64" height="123.46" viewBox="0 0 612.64 123.46">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #095472;
+                                                }
+
+                                                .cls-2 {
+                                                    fill: url(#radial-gradient);
+                                                }
+
+                                                .cls-3 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                            <radialGradient id="radial-gradient" cx="61.73" cy="61.73" r="61.73"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#36d0da"></stop>
+                                                <stop offset="1" stop-color="#095472"></stop>
+                                            </radialGradient>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <g>
+                                                        <path class="cls-1"
+                                                            d="M152.72,45.88V82h-4.37V45.88h-11.6l.81-4.14h26l.8,4.14Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M190.11,66.73V82h-4V67.07c0-4.71-2.7-7.18-6.55-7.18-4.19,0-7.24,3-7.24,7.75V82h-4V41l4-.8V59.78a9.68,9.68,0,0,1,7.87-3.68C185.8,56.1,190.11,60,190.11,66.73Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M217.67,74.14l1.56,3.67a15.69,15.69,0,0,1-11.15,4.71,13,13,0,0,1-13.44-13.15A13.14,13.14,0,0,1,208,56.1a11.65,11.65,0,0,1,11.89,10.45l-20.51,6.67a9.21,9.21,0,0,0,8.79,5.63C211.7,78.85,214.92,77.29,217.67,74.14Zm-19.06-4.77v.23l16.54-5.34a7.51,7.51,0,0,0-7.24-4.48A9.36,9.36,0,0,0,198.61,69.37Z">
+                                                        </path>
+                                                        <path class="cls-1" d="M235.25,42.14l4.36-.8V82h-4.36Z"></path>
+                                                        <path class="cls-1"
+                                                            d="M268.39,66.73V82h-4V67.07c0-4.77-2.7-7.24-6.55-7.24-4.19,0-7.24,3-7.24,7.81V82h-4V57l3.79-.75v3.45a10.15,10.15,0,0,1,8-3.62C264.14,56.1,268.39,60,268.39,66.73Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M273.73,79.88l.69-3.68C276.94,78,279.24,79,281.77,79s4.31-1.49,4.31-4c0-1.73-.87-3-4.66-4.2l-1-.34c-4-1.32-6-4-6-7.41,0-4,3.16-6.95,7.64-6.95a14.8,14.8,0,0,1,6.89,1.95l-.75,3.68A12.4,12.4,0,0,0,282,59.66c-2.47,0-3.85,1.44-3.85,3.33,0,1.61.86,2.76,4.19,3.91l1,.34c4.25,1.38,6.6,4,6.6,7.76,0,4.42-3.33,7.52-8.21,7.52A14.4,14.4,0,0,1,273.73,79.88Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M316,56.27V82h-3.79V78.9a10,10,0,0,1-7.93,3.62c-5.68,0-9.88-3.85-9.88-10.62V57l4-.75V71.55c0,4.71,2.65,7.18,6.44,7.18,4.13,0,7.12-3,7.12-7.75V57Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M335.76,56.27v4.08c-5.69,0-8.62,2.76-8.62,8.44V82h-4V57l3.79-.75v4.2C328.69,57.77,331.62,56.27,335.76,56.27Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M354.42,82l-.17-1.73a9.57,9.57,0,0,1-6.32,2.3,9.25,9.25,0,1,1,0-18.49,9,9,0,0,1,6,2.18V64.66c0-3.28-1.38-4.94-5.46-4.94a18.18,18.18,0,0,0-6.14,1.15l.75-3.74a17.16,17.16,0,0,1,5.57-.92c6.14,0,9.3,3,9.3,8.1V77.06l.17,4.89Zm-.11-8.68a6,6,0,0,0-12,0,5.82,5.82,0,0,0,6,5.8A5.88,5.88,0,0,0,354.31,73.27Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M386.41,66.73V82h-4V67.07c0-4.77-2.7-7.24-6.55-7.24-4.19,0-7.23,3-7.23,7.81V82h-4V57l3.8-.75v3.45a10.14,10.14,0,0,1,8-3.62C382.16,56.1,386.41,60,386.41,66.73Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M391,69.31A13.29,13.29,0,0,1,404.33,56.1,15.15,15.15,0,0,1,411,57.71l-.74,3.85a11.48,11.48,0,0,0-5.92-1.73,9.48,9.48,0,0,0,0,19,11.81,11.81,0,0,0,6.2-1.9l.69,4a15.86,15.86,0,0,1-6.89,1.66A13.32,13.32,0,0,1,391,69.31Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M437,74.14l1.55,3.67a15.68,15.68,0,0,1-11.14,4.71A13,13,0,0,1,414,69.37,13.14,13.14,0,0,1,427.3,56.1a11.64,11.64,0,0,1,11.89,10.45l-20.5,6.67a9.2,9.2,0,0,0,8.79,5.63C431,78.85,434.25,77.29,437,74.14Zm-19.07-4.77v.23l16.54-5.34a7.49,7.49,0,0,0-7.23-4.48A9.37,9.37,0,0,0,417.94,69.37Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M478,71c0,6.49-5.11,11-12.46,11H454.3V41.74h10.62C472,41.74,477,46.05,477,52.19a9.66,9.66,0,0,1-6.32,9.08C475.15,62.82,478,66.38,478,71Zm-19.3-25.1V59.55h6.26c4.48,0,7.64-2.88,7.64-7.07,0-3.9-3.16-6.6-7.64-6.6Zm14.82,24.87c0-4.2-3.27-7.07-8-7.07h-6.84V77.81h6.84C470.21,77.81,473.48,74.94,473.48,70.75Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M503.46,56.27V82h-3.79V78.9a10,10,0,0,1-7.93,3.62c-5.68,0-9.88-3.85-9.88-10.62V57l4-.75V71.55c0,4.71,2.65,7.18,6.44,7.18,4.13,0,7.12-3,7.12-7.75V57Z">
+                                                        </path>
+                                                        <path class="cls-1" d="M510.18,41l4-.8V82h-4Z"></path>
+                                                        <path class="cls-1" d="M521.09,41l4-.8V82h-4Z"></path>
+                                                        <path class="cls-1"
+                                                            d="M552.74,74.14l1.55,3.67a15.69,15.69,0,0,1-11.15,4.71A13,13,0,0,1,529.7,69.37,13.14,13.14,0,0,1,543,56.1a11.65,11.65,0,0,1,11.89,10.45l-20.51,6.67a9.21,9.21,0,0,0,8.79,5.63C546.76,78.85,550,77.29,552.74,74.14Zm-19.07-4.77v.23l16.54-5.34A7.51,7.51,0,0,0,543,59.78,9.37,9.37,0,0,0,533.67,69.37Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M566.12,60.35V74.71c0,2.58,1.43,4,3.67,4a9.94,9.94,0,0,0,3.68-.8V81.6a10.42,10.42,0,0,1-4.08.81c-4.42,0-7.29-2.76-7.29-7.41V60.35h-3.74l.69-3.68h3.05V51.1l4-2.41v8h7.35v3.68Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M579.21,46.91a2.88,2.88,0,1,1,2.87,2.87A2.84,2.84,0,0,1,579.21,46.91Zm.86,10.17,4-.81V82h-4Z">
+                                                        </path>
+                                                        <path class="cls-1"
+                                                            d="M612.64,66.73V82h-4V67.07c0-4.77-2.7-7.24-6.55-7.24-4.19,0-7.23,3-7.23,7.81V82h-4V57l3.8-.75v3.45a10.12,10.12,0,0,1,8-3.62C608.39,56.1,612.64,60,612.64,66.73Z">
+                                                        </path>
+                                                    </g>
+                                                    <circle class="cls-2" cx="61.73" cy="61.73" r="61.73"></circle>
+                                                    <g>
+                                                        <path class="cls-3"
+                                                            d="M41,46V82H36.66V46H25.06l.8-4.13h26L52.63,46Z"></path>
+                                                        <path class="cls-3" d="M59.86,42.23l4.37-.8V82H59.86Z"></path>
+                                                        <path class="cls-3"
+                                                            d="M98.4,71.06c0,6.49-5.11,11-12.46,11H74.74V41.83H85.36c7.12,0,12.12,4.3,12.12,10.45a9.67,9.67,0,0,1-6.32,9.08C95.59,62.91,98.4,66.47,98.4,71.06ZM79.1,46V59.63h6.26c4.48,0,7.64-2.87,7.64-7.06C93,48.66,89.84,46,85.36,46ZM93.92,70.83c0-4.19-3.27-7.06-8-7.06H79.1V77.9h6.84C90.65,77.9,93.92,75,93.92,70.83Z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

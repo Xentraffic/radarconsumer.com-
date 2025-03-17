@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Debt Program</title>
+    <link rel="shortcut icon" href="https://radarconsumer.com/debt/ES/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+   <script src=//b-js.ringba.com/CA1b389723ada6470db39bf4410a782f58 async></script>
+    <style>
+        .dtpcnt {
+            opacity: 0;
+        }
+    </style>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '8167449810007593');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=8167449810007593&ev=PageView&noscript=1" />
+    </noscript>
+</head>
+
+<body>
+
+    <div class="elementor elementor-10">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-7eb0cb78 elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12278a57">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-46472103 elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Miles De Personas Están Resolviendo Sus Deudas Con Este <span style="color: #1ab8b6;">Programa De Deuda De 2024</span>. Vea Si Califica.</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-43788431 elementor-widget elementor-widget-image">
+                            <div class="elementor-widget-container">
+                                <img width="894" height="355" src="ezgif-1-51885182171.jpg.png" class="attachment-large size-large" srcset="ezgif-1-51885182171.jpg.png 894w, ezgif-1-51885182171-300x119.jpg.png 300w, ezgif-1-51885182171-768x305.jpg.png 768w" sizes="(max-width: 894px) 100vw, 894px">
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-41bb73ef elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Ahora hay ayuda disponible para los residentes de los Estados Unidos que tienen deudas inmanejables. Sin ayuda, muchos Estadounidenses están luchando por recuperar la estabilidad financiera.</h2>
+                                <h2 class="elementor-heading-title elementor-size-default">Muchos han pagado las facturas a tiempo y tienen ahorros, pero piensan en declararse en bancarrota. La mayoría no sabe que podrían resolver sus deudas.</h2>
+                                <h2 class="elementor-heading-title elementor-size-default"><strong>Este programa de 2024</strong> está ayudando a los Estadounidenses a resolver deudas combinadas superiores a $20,000.</h2>
+                                <h2 class="elementor-heading-title elementor-size-default">Si tiene más de <strong>$20,000</strong> en deudas, entonces puede ser pre-calificado para este programa de 2024.</h2>
+                                <h2 class="elementor-heading-title elementor-size-default">Es simple y completamente gratis verificar la elegibilidad. Para comenzar, complete un <strong>breve formulario</strong> y luego haga una llamada para ver cuáles son sus opciones.</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-21d3f055 elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default" style="text-decoration: underline;">Responda este breve cuestionario para verificar su elegibilidad</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-22bbc18 elementor-widget elementor-widget-html">
+                            <div class="elementor-widget-container">
+                                <div class="question" id="q1">
+                                    <h2>Tiene una deuda de tarjeta de crédito de $20 mil o más?</h2>
+                                    <p><a class="cta_btn q1-btn">Si</a></p>
+                                    <p><a class="cta_btn q1-btn-bis">No</a></p>
+                                </div>
+                                <div class="question" id="q2" style="display:none;">
+                                    <h2>Vive usted en los Estados Unidos y tiene estatus legal?</h2>
+                                    <p><a class="cta_btn q2-btn-yes">Si</a></p>
+                                    <p><a class="cta_btn q2-btn-no">No</a></p>
+                                </div>
+                                <div class="question" id="q3" style="display:none;">
+                                    <h2>Está usted en quiebra activa?</h2>
+                                    <p><a class="cta_btn q3-btn-yes">Si</a></p>
+                                    <p><a class="cta_btn q3-btn-no">No</a></p>
+                                </div>
+                                <div class="question" id="q4" style="display:none;">
+                                    <h2>Está actualmente inscrito en un programa de alivio de deuda?</h2>
+                                    <p><a class="cta_btn q4-btn-yes">Si</a></p>
+                                    <p><a class="cta_btn q4-btn-no">No</a></p>
+                                </div>
+                                <div id="loading1" class="loading boxme" style="display:none;">Revisando sus respuestas...</div>
+                                <div id="loading2" class="loading boxme" style="display:none;">Encontrando Las Mejores Opciones...</div>
+                                <div id="loading3" class="loading boxme" style="display:none;">Confirmando Elegibilidad...</div>
+                                <div id="qualify" class="boxme" style="display:none;">
+                                    <div class="qualifyHeadline">Felicidades, Eres Elegible!</div>
+                                    <div class="loadingCopy"><strong>Último paso:</strong> Debe <u>llamar ahora</u> para ver sus opciones.</div>
+                                    <p style="font-size:18px;"><strong>Llame ahora para averiguar qué parte de su deuda se puede resolver!</strong></p>
+                                    <h2><strong id="tab_call" style="display: none;">TOCA PARA LLAMAR</strong></h2>
+                                    <a href="tel:+18775370359" class="cta_btn sh-campaign-1564" id="click_to_call_btn" onclick="fbq('track', 'Purchase');">TOCA AQUÍ!</a>
+                                    <p style="text-align: center; font-size:18px; font-weight:bold; line-height: 0.7em; padding-top: 15px;">Actúa rápido! ¡La aprobación previa finaliza hoy!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-3a4118ce elementor-widget-divider--view-line elementor-widget elementor-widget-divider">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-divider">
+                                    <span class="elementor-divider-separator"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-69fe641f elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56346344">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background-color: #f0f0f0; padding: 20px;">
+                        <div class="elementor-element elementor-element-591fc242 elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container"></div>
+                        </div>
+                        <div class="elementor-element elementor-element-3ea37e3e elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container">
+                                <p class="elementor-heading-title elementor-size-default" style="margin-bottom: 20px; font-size: 0.9em;">Este sitio no forma parte del sitio web de Facebook ni de Facebook Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca comercial de FACEBOOK, Inc.</p>
+                                <p class="elementor-heading-title elementor-size-default" style="color: #666666; font-size: 0.9em; margin-top: 0;">DESCARGO DE RESPONSABILIDAD: Los resultados pueden variar de persona a persona. El contenido de este sitio web se basa en la opinión del autor y se proporciona "TAL CUAL" y "SEGÚN DISPONIBILIDAD". Consulte a un profesional de la salud antes de implementar cualquier estrategia analizada en este sitio web.</p>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-privacy-terms elementor-widget elementor-widget-text-editor">
+                            <div class="elementor-widget-container">
+                                <div style="text-align: center;">
+                                    <p style="display: inline; margin-right: 15px; margin-bottom: 0;"><a href="https://healthwayslife.com/privacy-policy" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Política de Privacidad</a></p>
+                                    <p style="display: inline; margin-bottom: 0;"><a href="https://healthwayslife.com/terms-of-service" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Términos de Servicio</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <!-- Custom JS Script -->
+    <script src="main_script2.js"></script>
+
+    <!-- Purchase Pixel Trigger -->
+    <script type="text/javascript">
+        document.getElementById("click_to_call_btn").onclick = function () {
+            fbq('track', 'Purchase');
+        };
+    </script>
+</body>
+
+</html>

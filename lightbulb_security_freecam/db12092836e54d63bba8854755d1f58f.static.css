@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+.bg-gradient-dark {
+  background-image: radial-gradient(
+    circle 976px at 51.2% 51%,
+    rgba(11, 27, 103, 1) 0%,
+    rgba(16, 66, 157, 1) 0%,
+    rgba(11, 27, 103, 1) 17.3%,
+    rgba(11, 27, 103, 1) 58.8%,
+    rgba(11, 27, 103, 1) 71.4%,
+    rgba(16, 66, 157, 1) 100.2%
+  );
+}
+
+.text-blue-dark {
+  color: rgba(11, 27, 103, 1);
+}
+.text-dark {
+  color: rgba(11, 27, 103, 1) !important;
+}
+.text-md {
+  font-size: 0.9rem;
+}
+.text-sm {
+  font-size: 0.83rem;
+}
+.text-xs {
+  font-size: 0.7rem;
+}
+
+.text-muted {
+  color: rgb(79, 79, 79) !important;
+}
+
+.logo {
+  height: 1.6rem;
+}
+
+.bg-light-gray {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .fixedclass {
+    position: fixed !important;
+    width: 13.5rem;
+    top: 5px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .fixedclass {
+    width: 16.2rem;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .fixedclass {
+    width: 18rem;
+  }
+}

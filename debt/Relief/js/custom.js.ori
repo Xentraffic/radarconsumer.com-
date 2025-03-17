@@ -1,0 +1,218 @@
+// Firebase configuration for radarconsumer
+const firebaseConfig = {
+  apiKey: "AIzaSyA6CVty61gzp9OyMuw1Bgtmwm0o98SB4dY",
+  authDomain: "radarconsumer-61e6a.firebaseapp.com",
+  projectId: "radarconsumer-61e6a",
+  storageBucket: "radarconsumer-61e6a.appspot.com",
+  messagingSenderId: "701375721954",
+  appId: "1:701375721954:web:dd9f3a5608b301272b09bb",
+  measurementId: "G-F28CMTGFD3"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics();
+const db = firebase.firestore();
+
+// Generate unique visitor ID
+const visitorId = Math.floor(1000 + Math.random() * 9000);
+
+// Get current date in MM_DD format
+const currentDate = new Date().toLocaleDateString('en-US', { month: '2-digit', day: '2-digit' }).replace('/', '_');
+
+function getPSTTimestamp() {
+  const now = new Date();
+  const pstDate = new Date(now.toLocaleString("en-US", { timeZone: "America/Los_Angeles" }));
+  const hours = pstDate.getHours();
+  const minutes = pstDate.getMinutes();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  const formattedHours = hours % 12 || 12;
+  const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+  return `${formattedHours}:${formattedMinutes} ${ampm}`;
+}
+
+// Function to get UTM parameters
+function getUTMParameters() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return {
+    utm_campaign: urlParams.get('utm_campaign') || 'not_set',
+    utm_content: urlParams.get('utm_content') || 'not_set',
+    utm_medium: urlParams.get('utm_medium') || 'not_set',
+    utm_source: urlParams.get('utm_source') || 'not_set'
+  };
+}
+
+// Function to log event
+async function logFirebaseEvent(eventName, eventData = {}) {
+  // Log to Analytics
+  analytics.logEvent(eventName, eventData);
+
+  // Log to Firestore
+  const visitorRef = db.collection('ccdebt').doc(currentDate).collection('visitors').doc(visitorId.toString());
+  await visitorRef.set({
+    [eventName]: {
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      ...eventData
+    }
+  }, { merge: true });
+
+  // Update conversions count
+  const countsRef = db.collection('ccdebt').doc(currentDate).collection('conversions').doc('counts');
+  await countsRef.set({
+    [eventName]: firebase.firestore.FieldValue.increment(1)
+  }, { merge: true });
+
+  // Store individual conversion details
+  const conversionDetailsRef = db.collection('ccdebt').doc(currentDate).collection('conversions').doc(eventName).collection('details');
+  await conversionDetailsRef.add({
+    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    visitorId: visitorId,
+    ...eventData
+  });
+}
+
+function formatPhoneNumberWithParams(phoneNumber) {
+  const utmParams = getUTMParameters();
+  const customData = {
+    cn: utmParams.utm_campaign !== 'not_set' ? utmParams.utm_campaign : undefined,
+    an: utmParams.utm_content !== 'not_set' ? utmParams.utm_content : undefined,
+    asn: utmParams.utm_source !== 'not_set' ? utmParams.utm_source : undefined,
+    url: window.location.href
+  };
+
+  // Remove undefined values
+  Object.keys(customData).forEach(key => customData[key] === undefined && delete customData[key]);
+
+  const customDataString = encodeURIComponent(JSON.stringify(customData));
+  return `${phoneNumber};custom_data=${customDataString}`;
+}
+
+function initiateCall(phoneNumber) {
+  console.log("Preparing to call:", phoneNumber);
+  // Initiate the call
+  window.location.href = `tel:${phoneNumber}`;
+}
+
+function showEligibilityScreen() {
+  $('body > *').hide();
+  $('header, #eligible-screen').show();
+}
+
+$(document).ready(function () {
+  console.log("UTM Parameters:", getUTMParameters());
+  // Log page view
+  logFirebaseEvent('view', {
+    timestamp: getPSTTimestamp(),
+    ...getUTMParameters()
+  });
+
+  // Set default phone number
+  const defaultPhoneNumber = "+18775370359";
+  updatePhoneNumbers(defaultPhoneNumber);
+
+  $("#question-1 button, #question-1-bottom button").on("click", function () {
+    $(this).addClass('active').siblings().removeClass('active');
+    const debtAmount = $(this).data('debt');
+    let phoneNumber;
+
+    switch (debtAmount) {
+      case 'more15k':
+        phoneNumber = "+18775370359";
+        break;
+      case '10to15k':
+      case 'less10k':
+      default:
+        phoneNumber = "+18775370359";
+    }
+
+    updatePhoneNumbers(phoneNumber);
+    logQuizCompleted($(this).text());
+
+    // Track "Submit Application" Facebook Pixel event only once
+    fbq('track', 'SubmitApplication');
+    console.log('Facebook SubmitApplication event triggered');
+
+    // Hide all content in main except eligibility screen
+    $('main .container > *').not('#eligible-screen').hide();
+    $('#eligible-screen').show();
+
+    // Scroll to the top of the page
+    $('html, body').animate({ scrollTop: 0 }, 500);
+
+    // Start the countdown timer
+    countdown(4, 58);
+  });
+
+  $("#redirectButton, #circleButton").on("click", function (e) {
+    e.preventDefault(); // Prevent the default action
+    const phoneNumber = $(this).attr("href").replace("tel:", "").split(';')[0];
+    logCallEvent(); // Log the call event to Firebase
+    initiateCall(phoneNumber);
+  });
+});
+
+function updatePhoneNumbers(phoneNumber) {
+  const formattedPhoneNumber = phoneNumber.replace(/(\+1)(\d{3})(\d{3})(\d{4})/, "$1 ($2) $3-$4");
+  $(".phone-number, #phoneNumber").text(formattedPhoneNumber);
+  $("#redirectButton, #circleButton").attr("href", `tel:${formatPhoneNumberWithParams(phoneNumber)}`);
+}
+
+function logCallEvent() {
+  logFirebaseEvent('call', {
+    timestamp: getPSTTimestamp(),
+    ...getUTMParameters()
+  });
+  fbq('track', 'Contact');
+  console.log('Call event logged to Firebase and Facebook Contact event triggered');
+}
+
+function logQuizCompleted(debtAmount) {
+  logFirebaseEvent('quiz_completed', {
+    debtAmount: debtAmount,
+    timestamp: getPSTTimestamp(),
+    ...getUTMParameters()
+  });
+}
+
+function countdown(minutes, seconds) {
+  var totalSeconds = minutes * 60 + seconds;
+
+  function updateTimer() {
+    var counter = document.getElementById("timer");
+    var counter2 = document.getElementById("timer2");
+    var minutesLeft = Math.floor(totalSeconds / 60);
+    var secondsLeft = totalSeconds % 60;
+
+    var timerText = `${minutesLeft.toString().padStart(2, '0')}:${secondsLeft.toString().padStart(2, '0')}`;
+
+    if (counter) counter.textContent = timerText;
+    if (counter2) counter2.textContent = timerText;
+
+    if (totalSeconds > 0) {
+      totalSeconds--;
+    } else {
+      clearInterval(timerInterval);
+    }
+  }
+
+  updateTimer();
+  var timerInterval = setInterval(updateTimer, 1000);
+}
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const rm1Element = document.getElementById('rm1');
+if (rm1Element) {
+  rm1Element.textContent = getRandomNumber(5, 10);
+}
+
+function logCallEvent() {
+  logFirebaseEvent('call', {
+    timestamp: getPSTTimestamp(),
+    ...getUTMParameters()
+  });
+  fbq('track', 'Contact');
+  console.log('Facebook Contact event triggered');
+}

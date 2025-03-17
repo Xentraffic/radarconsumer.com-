@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Debt Program</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>.dtpcnt {
+            opacity: 0;
+        }
+    </style>
+
+  
+
+    <!-- Google tag (gtag.js) -->
+   
+
+    <!-- Meta/Facebook Pixel Code -->
+
+ 
+
+</head>
+
+<body>
+
+    <div class="elementor elementor-10">
+
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-7eb0cb78 elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+            <div class="elementor-container elementor-column-gap-default">
+                <div
+                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12278a57">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div
+                            class="elementor-element elementor-element-46472103 elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Thousands Are Getting Debts Settled With This <span
+                                      <span style="color: #1ab8b6;">2024 Debt Program</span> See If You Qualify.
+
+                            </div>
+                        </div>
+                        <div
+                            class="elementor-element elementor-element-43788431 elementor-widget elementor-widget-image">
+                            <div class="elementor-widget-container">
+                                <img width="894" height="355" src="ezgif-1-51885182171.jpg"
+                                    class="attachment-large size-large"
+                                    srcset="ezgif-1-51885182171.jpg 894w, ezgif-1-51885182171-300x119.jpg 300w, ezgif-1-51885182171-768x305.jpg 768w"
+                                    sizes="(max-width: 894px) 100vw, 894px">
+                            </div>
+                        </div>
+                        <div
+                            class="elementor-element elementor-element-41bb73ef elementor-widget elementor-widget-heading">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">
+                                    <strong>Help is now available for US residents dealing with unmanageable debt.</strong> Without help, many Americans are struggling to get back on track with financial stability.
+                                </h2>
+                                      <h2 class="elementor-heading-title elementor-size-default">
+                                   Many have gone from paying bills on time, and having plenty of savings to thinking about filing bankruptcies. Most don’t know they could get their debts resolved.
+                                </h2>
+                                    <h2 class="elementor-heading-title elementor-size-default">
+                                    <strong>This 2024 Program</strong> is helping Americans resolve combined debts over $20,000.
+                                </h2>
+                                            <h2 class="elementor-heading-title elementor-size-default">
+                                    If you have more than <strong>$20,000</strong> in debt then you might be qualified for this 2024 program.
+                                </h2>
+                                              <h2 class="elementor-heading-title elementor-size-default">
+                                   It's simple and completely free to check eligibility. To get started, complete a <strong>short quiz below</strong> then hop on a call to see what your options are.
+                                </h2>
+                                
+                            </div>
+                            
+                        </div>
+                        <div
+                            class="elementor-element elementor-element-21d3f055 elementor-widget elementor-widget-heading">
+<div class="elementor-widget-container">
+    <h2 class="elementor-heading-title elementor-size-default" style="text-decoration: underline;">
+        Take this short quiz to check your eligibility
+    </h2>
+</div>                        </div>
+<div class="elementor-element elementor-element-22bbc18 elementor-widget elementor-widget-html">
+<div class="elementor-widget-container">
+    <div class="question" id="q1">
+        <h2>Do you have $20k or more in Credit Card debt?</h2>
+        <p>
+            <a class="cta_btn q1-btn">Yes</a>
+        </p>
+        <p>
+            <a class="cta_btn q1-btn-bis">No</a>
+        </p>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+        <h2>Do you live in the United States and have legal status?</h2>
+        <p>
+            <a class="cta_btn q2-btn-yes">Yes</a>
+        </p>
+        <p>
+            <a class="cta_btn q2-btn-no">No</a>
+        </p>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+        <h2>Are you in active bankruptcy?</h2>
+        <p>
+            <a class="cta_btn q3-btn-yes">Yes</a>
+        </p>
+        <p>
+            <a class="cta_btn q3-btn-no">No</a>
+        </p>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+        <h2>Are you currently enrolled in a debt relief program?</h2>
+        <p>
+            <a class="cta_btn q4-btn-yes">Yes</a>
+        </p>
+        <p>
+            <a class="cta_btn q4-btn-no">No</a>
+        </p>
+    </div>
+    <div id="loading1" class="loading boxme" style="display:none;"> Reviewing Your Answers... </div>
+</div>
+        <div id="loading1" class="loading boxme"> Reviewing Your Answers... </div>
+        <div id="loading2" class="loading boxme"> Matching You with the Best Options... </div>
+        <div id="loading3" class="loading boxme"> Confirming Eligibility... </div>
+        <div id="qualify" class="boxme">
+            <div class="qualifyHeadline"> Congrats, You're Eligible!</div>
+            </script>
+            <div class="loadingCopy">
+                <strong>Last Step:</strong> You must <u>Call Now</u> to see your options. 
+            </div>
+            <p style="font-size:18px;">
+                <strong>Call now to find out how much of your debt can be resolved!</strong>
+            </p>
+            <h2>
+                <strong id="tab_call" style="display: none;"> TAP TO CALL</strong>
+            </h2>
+         <a href="https://trk.mrttrck.com/click" class="cta_btn sh-campaign-1564" id="click_to_call_btn">
+         
+         
+    TAP HERE!</a>
+<p style="text-align: center; font-size:18px; font-weight:bold; line-height: 0.7em; padding-top: 15px;">
+    Act quickly! Pre-approval ends today!
+    <br class="d-none">
+    <br class="d-none">
+    <br class="d-none">
+    <strong style="color: #E90E0E;">
+       
+    </strong>
+    <br>
+    <br>
+</p>
+
+        </div>
+    </div>
+</div>
+
+                        
+                        <div
+                            class="elementor-element elementor-element-3a4118ce elementor-widget-divider--view-line elementor-widget elementor-widget-divider">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-divider">
+                                    <span class="elementor-divider-separator"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+    class="elementor-section elementor-top-section elementor-element elementor-element-69fe641f elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+    <div class="elementor-container elementor-column-gap-default">
+        <div
+            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56346344">
+            <div class="elementor-widget-wrap elementor-element-populated" style="background-color: #f0f0f0; padding: 20px;">
+                <!-- Disclaimer Heading -->
+                <div class="elementor-element elementor-element-591fc242 elementor-widget elementor-widget-heading">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default"></h2>
+                    </div>
+                </div>
+
+                <!-- Disclaimer Content -->
+                <div class="elementor-element elementor-element-3ea37e3e elementor-widget elementor-widget-heading">
+                    <div class="elementor-widget-container">
+                        <p class="elementor-heading-title elementor-size-default" style="margin-bottom: 20px; font-size: 0.9em;">
+                            This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+                        </p>
+                        <p class="elementor-heading-title elementor-size-default" style="color: #666666; font-size: 0.9em; margin-top: 0;">
+                            DISCLAIMER: Results may vary from person to person. This website's content is based upon the author's opinion and is provided on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues. The author is not engaged in rendering medical or similar professional services or advice via this website, and the information provided is not intended to replace medical advice offered by a licensed healthcare provider. Please consult a health professional before implementing any strategy discussed on this website.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Privacy Policy and Terms of Service Links -->
+                <div class="elementor-element elementor-element-privacy-terms elementor-widget elementor-widget-text-editor">
+                    <div class="elementor-widget-container">
+                        <div style="text-align: center;">
+                            <p style="display: inline; margin-right: 15px; margin-bottom: 0;">
+                                <a href="https://healthwayslife.com/privacy-policy" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Privacy Policy</a>
+                            </p>
+                            <p style="display: inline; margin-bottom: 0;">
+                                <a href="https://healthwayslife.com/terms-of-service" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Terms of Service</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <!-- Custom JS Script -->
+    <script src="main_script2.js"></script>
+
+    <!-- CTA -->
+    <script>
+        function cta() {
+            // window.location.href = "https://trk.mrttrck.com/click";
+        }
+        
+    </script>
+
+    
+        
+    </script>
+
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,599 @@
+::-webkit-input-placeholder {
+    color: #ccc !important
+}
+
+:-moz-placeholder {
+    color: #ccc !important
+}
+
+::-moz-placeholder {
+    color: #ccc !important
+}
+
+:-ms-input-placeholder {
+    color: #ccc !important
+}
+
+:focus {
+    outline: 0 !important
+}
+
+footer .copy,
+footer a {
+    font-size: 12px;
+    font-weight: 400;
+    display: block
+}
+
+.modal {
+    color: #444;
+    font-size: 14px
+}
+
+.modal .modal-content {
+    border: none;
+    border-radius: 0
+}
+
+.modal .modal-title {
+    font-size: 20px;
+    font-weight: 400
+}
+
+.modal .modal-body p {
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1.4em
+}
+
+.modal .modal-body label {
+    padding-top: 0;
+    margin-top: 0
+}
+
+.modal .modal-body textarea {
+    height: 60px;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 100%
+}
+
+.modal .modal-body .form-control {
+    border-radius: 0
+}
+
+.modal .modal-body .btn {
+    border-radius: 0
+}
+
+#contactus #contactInfo {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    text-align: right
+}
+
+#contactus .address {
+    font-size: 13px;
+    margin-bottom: 5px
+}
+
+#contactus .email {
+    font-size: 13px
+}
+
+@media (min-width:576px) {
+    .modal .modal-body {
+        max-height: 600px;
+        overflow-y: auto
+    }
+}
+
+@media (min-width:768px) {
+
+    footer .copy,
+    footer a {
+        display: inline-block
+    }
+
+    footer a {
+        margin-left: 10px
+    }
+}
+
+a:not([href]):not([tabindex]) {
+    color: unset;
+    text-decoration: unset;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.2em
+}
+
+a {
+    text-decoration: underline
+}
+
+.btn {
+    text-decoration: none
+}
+
+footer {
+    color: #949494;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px
+}
+
+footer a {
+    color: #949494;
+    text-decoration: none
+}
+
+.img-responsive {
+    width: 100%
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #4d8ecc;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, .15);
+    color: #fff
+}
+
+.header a {
+    color: #eec013;
+    text-decoration: underline
+}
+
+.header .logo {
+    width: 180px
+}
+
+.header .adv {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #def;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px
+}
+
+.headings {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 30px auto
+}
+
+.headings h1 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+.headings h2 {
+    font-size: 15px;
+    font-weight: 400
+}
+
+.keywords .keyword {
+    text-decoration: none !important;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px hsla(0, 0%, 71%, .5);
+    border-radius: 6px;
+    font-size: 10px;
+    line-height: 1.1em;
+    text-align: center;
+    color: #797979;
+    padding: 10px 0
+}
+
+.keywords .keyword+.keyword {
+    margin-left: 10px
+}
+
+.info {
+    font-size: 11px;
+    white-space: nowrap;
+    height: 23px;
+    line-height: 23px
+}
+
+.info .date {
+    padding-left: 6px;
+    margin-left: 6px;
+    border-left: solid 1px #eee
+}
+
+.pa-content {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding-top: 10px
+}
+
+.pa-content p {
+    line-height: 1.5em;
+    margin-bottom: 10px
+}
+
+.pa-content a {
+    color: #23abf9 !important;
+}
+
+.pa-content a:hover {
+    color: #23abf9 !important;
+    text-decoration: underline !important;
+}
+
+.pa-content h1,
+.pa-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.pa-content blockquote {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    border-top: 1px solid hsla(0, 0%, 71%, .5);
+    border-bottom: 1px solid hsla(0, 0%, 71%, .5);
+    color: #9b9b9b;
+    font-family: "Helvetica Neue";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 30px
+}
+
+.pa-content blockquote p {
+    font-size: 14px;
+    color: #797979
+}
+
+.pa-content .img-main {
+    max-width: none
+}
+
+.pa-content .img-main img {
+    width: 100%
+}
+
+.pa-content .img-1 {
+    width: 100%;
+    margin: 40px auto;
+    display: block
+}
+
+.pa-content .img-2 {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    display: block
+}
+
+.pa-content .btn {
+    font-family: Roboto, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    border: 1px solid #23abf9;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #23abf9;
+    white-space: nowrap
+}
+
+.pa-content .fbtn {
+    border: 0;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #fff !important;
+    background-color: #23abf9;
+    background-image: none;
+    box-shadow: 0 20px 33px 1px rgba(14, 152, 212, .3);
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.pa-content .fbtn:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+.agreement p {
+    color: #797979;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center
+}
+
+@media (min-width:768px) {
+    .header .logo {
+        width: 260px
+    }
+
+    .keywords .keyword {
+        flex-grow: 0;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .headings h1 {
+        font-size: 58px
+    }
+
+    .headings h2 {
+        font-size: 34px
+    }
+
+    .pa-content .box {
+        margin-top: 100px;
+        margin-bottom: 100px
+    }
+
+    .pa-content h1,
+    .pa-content h2 {
+        font-size: 38px;
+        margin-bottom: 40px
+    }
+
+    .pa-content p {
+        font-size: 20px;
+        line-height: 36px
+    }
+
+    .pa-content .img-main {
+        margin-bottom: 40px
+    }
+
+    .pa-content blockquote {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .pa-content blockquote p {
+        display: flex;
+        margin: 0;
+        font-size: 14px;
+        line-height: 22px;
+        color: #9b9b9b;
+        font-family: "Helvetica Neue";
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 30px
+    }
+
+    .pa-content blockquote p:first-child {
+        width: 700px;
+        padding: 20px 50px 20px 20px
+    }
+
+    .pa-content blockquote p .btn {
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        width: 220px;
+        line-height: 60px;
+        padding: 0 30px;
+        border: 1px solid #23abf9;
+        border-radius: 10px;
+        background-color: transparent;
+        color: #23abf9;
+        white-space: nowrap
+    }
+
+    .pa-content .fbtn {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+.btn-check-zip {
+    display: none !important
+}
+
+#zip {
+    background-color: rgba(0, 123, 255, .25);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid hsla(0, 0%, 71%, .5);
+    border-bottom: 1px solid hsla(0, 0%, 71%, .5);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center
+}
+
+#zip label {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0
+}
+
+#zip input[type=text] {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0
+}
+
+#zip a {
+    display: block;
+    height: 60px;
+    background-image: linear-gradient(260deg, #41e64a, #3cd142);
+    box-shadow: 0 15px 33px 1px rgba(72, 212, 14, .25);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background-color: #3898ec;
+    color: #fff !important;
+    border: 0;
+    border-radius: 0;
+    margin-top: 15px
+}
+
+@media (min-width:768px) {
+    #zip {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 5%
+    }
+
+    #zip label {
+        text-align: left;
+        display: flex;
+        align-items: center
+    }
+
+    #zip a,
+    #zip input[type=text] {
+        margin-top: 0;
+        margin-right: 40px;
+        width: 50%;
+        flex-grow: 1;
+        flex-basis: 0
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #ccc !important
+}
+
+:-moz-placeholder {
+    color: #ccc !important
+}
+
+::-moz-placeholder {
+    color: #ccc !important
+}
+
+:-ms-input-placeholder {
+    color: #ccc !important
+}
+
+:focus {
+    outline: 0 !important
+}
+
+footer .copy,
+footer a {
+    font-size: 12px;
+    font-weight: 400;
+    display: block
+}
+
+.modal {
+    color: #444;
+    font-size: 14px
+}
+
+.modal .modal-content {
+    border: none;
+    border-radius: 0
+}
+
+.modal .modal-title {
+    font-size: 20px;
+    font-weight: 400
+}
+
+.modal .modal-body p {
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1.4em
+}
+
+.modal .modal-body label {
+    padding-top: 0;
+    margin-top: 0
+}
+
+.modal .modal-body textarea {
+    height: 60px;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 100%
+}
+
+.modal .modal-body .form-control {
+    border-radius: 0
+}
+
+.modal .modal-body .btn {
+    border-radius: 0
+}
+
+#contactus #contactInfo {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    text-align: right
+}
+
+#contactus .address {
+    font-size: 13px;
+    margin-bottom: 5px
+}
+
+#contactus .email {
+    font-size: 13px
+}
+
+@media (min-width:576px) {
+    .modal .modal-body {
+        max-height: 600px;
+        overflow-y: auto
+    }
+}
+
+@media (min-width:768px) {
+
+    footer .copy,
+    footer a {
+        display: inline-block
+    }
+
+    footer a {
+        margin-left: 10px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .keywords .keyword {
+        padding: 10px 5px;
+    }
+}
