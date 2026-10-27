@@ -12,3 +12,63 @@ ul{padding-left:20px;margin:0}li{margin:6px 0}
 footer{border-top:1px solid #e3e8ef;background:#fff;padding:20px 0;font-size:.85rem;color:#4b5563;text-align:center}
 footer a{color:#0f4c81;margin:0 8px}.doc h1{text-align:left;font-size:1.6rem;margin-top:28px}.doc h2{font-size:1.15rem;margin-top:24px}
 @media(min-width:768px){h1{font-size:2.5rem}.hero{padding:60px 0 36px}}
+
+/* Landing page. Legal pages keep the rules above. */
+.lander .hero{position:relative;overflow:hidden;padding:0;text-align:center;background:#e7eef5}
+.hero-media{position:relative;aspect-ratio:16/9;background:#d5e0ea}
+.hero-media picture{display:block;height:100%}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:76% 42%}
+.hero-copy{padding:28px 20px 8px}
+.hero-panel{max-width:40rem;margin:0 auto}
+.hero h1{font-size:1.85rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.hero .sub{font-size:1.05rem;margin:0 auto 22px;max-width:38rem}
+.hero .call{margin-top:0}
+.hero .note{text-align:center}
+.trust{background:#fff;border-bottom:1px solid #e3e8ef;padding:22px 0}
+.trust-list,.steps{list-style:none;padding:0;margin:0}
+.trust-list{display:grid;gap:16px}
+.trust-list li,.steps li{margin:0}
+.trust-list li{display:flex;gap:12px;align-items:flex-start;text-align:left}
+.trust-list svg{flex:0 0 auto;color:#0f4c81;background:#e8f2fa;border-radius:12px;padding:8px;width:28px;height:28px;box-sizing:content-box}
+.trust-list strong{display:block;color:#10263f;font-size:.98rem}
+.trust-list p{margin:0;color:#4b5563;font-size:.9rem;line-height:1.4}
+.how{padding:28px 0 6px}
+.how h2,.cta-repeat h2{color:#10263f;letter-spacing:-.02em;line-height:1.25;margin:0 0 16px;font-size:1.45rem;text-wrap:balance}
+.steps{display:grid;gap:14px}
+.steps li{background:#fff;border:1px solid #e3e8ef;border-radius:16px;padding:18px 18px 16px}
+.step-num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#0f4c81;color:#fff;font-weight:700;font-size:.95rem}
+.steps h3{margin:10px 0 6px;font-size:1.05rem;color:#10263f}
+.steps p{margin:0;color:#4b5563;font-size:.95rem}
+.steps a{color:#0f4c81}
+.cta-repeat{background:#fff;border-top:1px solid #e3e8ef;border-bottom:1px solid #e3e8ef;padding:32px 0;text-align:center;margin:8px 0 0}
+.cta-repeat h2{max-width:22em;margin-left:auto;margin-right:auto}
+.cta-repeat .note{text-align:center}
+.lander .card ul{padding-left:0;list-style:none}
+.lander .card ul li{position:relative;padding-left:18px;margin:10px 0}
+.lander .card ul li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:#0f4c81}
+.sticky-call{display:none}
+.lander a:focus-visible{outline:3px solid #0f4c81;outline-offset:3px}
+@media(max-width:959px){
+  .sticky-call{display:block;position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:30;background:#0f7a3d;color:#fff;text-decoration:none;text-align:center;font-weight:700;font-size:1.15rem;padding:14px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(15,122,61,.35)}
+  .sticky-call:hover,.sticky-call:focus{background:#0b6331}
+  body.lander{padding-bottom:88px}
+}
+@media(min-width:960px){
+  .lander .hero{min-height:640px;text-align:left}
+  .hero-media{position:absolute;inset:0;aspect-ratio:auto;height:auto}
+  .hero-media picture,.hero-media img{position:absolute;inset:0;height:100%}
+  .hero-media img{object-position:70% center}
+  .lander .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(246,248,251,.72) 0%,rgba(246,248,251,.42) 34%,rgba(246,248,251,.08) 52%,rgba(246,248,251,0) 66%)}
+  .hero-copy{position:relative;z-index:1;display:flex;align-items:center;min-height:640px;max-width:1160px;margin:0 auto;padding:48px 32px}
+  .hero-panel{margin:0;max-width:520px;background:rgba(255,255,255,.94);border-radius:20px;padding:34px 34px 28px;box-shadow:0 18px 44px rgba(16,38,63,.14);text-align:left}
+  .hero h1{font-size:2.55rem}
+  .hero .sub,.hero .note,.hero .call{margin-left:0;margin-right:0;text-align:left}
+  .hero .call{max-width:420px}
+  .trust{padding:28px 0}
+  .trust-list{grid-template-columns:repeat(4,1fr);gap:22px}
+  .trust-list li{flex-direction:column;align-items:center;text-align:center}
+  .how{padding:40px 0 12px}
+  .how h2{font-size:1.7rem;text-align:center}
+  .steps{grid-template-columns:repeat(3,1fr);gap:18px}
+  .wide{max-width:1080px}
+}
