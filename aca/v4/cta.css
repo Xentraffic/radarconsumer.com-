@@ -1,0 +1,9 @@
+/* CTA variant only. /aca/ does not load this file.
+   Color change: brand blue instead of the control green.
+   The phone number stays in the button text so Ringba can rewrite it. */
+.lander .call,.lander .sticky-call{background:#0f4c81;box-shadow:0 4px 14px rgba(15,76,129,.3)}
+.lander .call:focus,.lander .call:hover,.lander .sticky-call:focus,.lander .sticky-call:hover{background:#0c3d68}
+@media(max-width:959px){
+  .lander .sticky-call{box-shadow:0 8px 24px rgba(15,76,129,.35)}
+  body.lander{padding-bottom:108px}
+}
