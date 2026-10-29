@@ -1,0 +1,31 @@
+/* Styles for /aca/v2/, /aca/v3/, and /aca/v4/ only.
+   The live / and /aca/ pages do not load this file. */
+
+.variant .kicker{display:inline-block;margin:0 0 10px;padding:4px 10px;border-radius:999px;background:#e8f2fa;color:#0f4c81;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.variant .date-range{margin:0 0 6px;font-size:1.45rem;font-weight:800;letter-spacing:-.03em;color:#0f4c81;line-height:1.15}
+.variant .date-caption{margin:0 auto 18px;max-width:36rem;color:#4b5563;font-size:.95rem}
+.variant .section-intro{margin:-4px 0 16px;color:#4b5563}
+.variant .dates{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.variant .dates li{margin:0;background:#fff;border:1px solid #e3e8ef;border-radius:16px;padding:16px 16px 14px;text-align:left}
+.variant .when{display:block;margin-bottom:4px;color:#0f4c81;font-weight:800}
+.variant .dates p{margin:0;color:#4b5563;font-size:.95rem}
+.variant .call-lg{max-width:520px;padding:24px 18px;font-size:1.55rem;border-radius:14px}
+.variant .call-lg small{margin-top:4px;font-size:.95rem}
+.variant .situation-list{display:grid;gap:10px}
+.variant .situation{background:#fff;border:1px solid #e3e8ef;border-radius:16px;text-align:left}
+.variant .situation summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:16px 18px;cursor:pointer;list-style:none;font-weight:700;color:#10263f}
+.variant .situation summary::-webkit-details-marker{display:none}
+.variant .situation summary::after{content:"";flex:0 0 auto;width:10px;height:10px;margin-top:-4px;border-right:2px solid #0f4c81;border-bottom:2px solid #0f4c81;transform:rotate(45deg)}
+.variant .situation[open]{border-color:#0f4c81;box-shadow:inset 4px 0 0 #0f4c81}
+.variant .situation[open] summary::after{margin-top:4px;transform:rotate(-135deg)}
+.variant .situation summary:focus-visible{outline:3px solid #0f4c81;outline-offset:3px;border-radius:12px}
+.variant .situation-body{padding:0 18px 18px}
+.variant .situation-body p{margin:0 0 14px;color:#4b5563}
+.variant .situation .call{margin-top:0}
+
+@media(min-width:960px){
+  .variant .hero .kicker,.variant .hero .date-range,.variant .hero .date-caption{margin-left:0;margin-right:0;text-align:left}
+  .variant .dates{grid-template-columns:repeat(3,1fr)}
+  .variant .situation-list{grid-template-columns:1fr 1fr}
+  .variant .call-lg{font-size:1.7rem}
+}
